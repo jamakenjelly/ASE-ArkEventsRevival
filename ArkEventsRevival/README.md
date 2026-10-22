@@ -59,3 +59,5 @@ helps size a boss's shield dome. Turn on `DebugMode` in a config to log what the
 The wild-creature remap is marked experimental in `PluginInfo.json`: try it with `DebugMode` on before relying on it.
 
 Requires ARK: Survival Evolved with ArkApi 3.56.
+
+**Questions, help or feedback:** the O.W.S.C servers Discord - https://discord.gg/TkwW6F27dM
