@@ -60,4 +60,4 @@ The wild-creature remap is marked experimental in `PluginInfo.json`: try it with
 
 Requires ARK: Survival Evolved with ArkApi 3.56.
 
-**Questions, help or feedback:** the O.W.S.C servers Discord - https://discord.gg/TkwW6F27dM
+**Supported on the O.W.S.C servers:** https://discord.gg/TkwW6F27dM
