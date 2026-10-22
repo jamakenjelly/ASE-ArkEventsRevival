@@ -4,6 +4,12 @@ An ARK: Survival Evolved (ArkApi 3.56) server plugin that brings back the season
 Turkey Trial, Winter Wonderland, Love Evolved, Eggcellent Adventure, ARKaeology, Summer Bash, ARK's
 Anniversary and New Year's - with event creatures, bosses, drops and Discord announcements.
 
+## Screenshots
+
+![A DodoRex event boss breathing fire on a rider](screenshots/boss-fight.webp)
+
+![Event spawn beams in the sky over the island](screenshots/event-spawn-beams.webp)
+
 ## Install
 1. Download the zip from [Releases](../../releases) (or take the [`ArkEventsRevival`](ArkEventsRevival) folder) and copy that folder into your server's `ShooterGame/Binaries/Win64/ArkApi/Plugins/`.
 2. Each map has its own config: `config_<Map>.json` (`config_TheIsland.json`, `config_Gen2.json`, ...).
