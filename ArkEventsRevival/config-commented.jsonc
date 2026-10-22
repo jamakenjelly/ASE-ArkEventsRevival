@@ -1,0 +1,464 @@
+// ArkEventsRevival - the config explained. This file is documentation only.
+//
+// ============================== AUTO START DATES ==============================
+// With "AutoDetectActiveEvent": true, each event runs on its own between these
+// dates (each event's most recent official ARK: Survival Evolved run). Set in
+// every map's config under Events -> <event> -> AutoDateRanges.
+//
+//   Event (token for -event= / StartEvent)   Starts    Ends     Discord reminder
+//   New Year's          (NewYear)            Dec 31    Jan 1    Dec 30
+//   Love Evolved        (vday)               Feb 10    Feb 17   Feb 9
+//   Eggcellent Adventure(easter)             Apr 4     Apr 24   Apr 3
+//   ARK's Anniversary   (birthday)           Jun 2     Jun 6    Jun 1
+//   ARKaeology          (ARKaeology)         Jun 15    Jul 17   Jun 14
+//   Summer Bash         (Summer)             Jul 1     Jul 26   Jun 30
+//   Fear Evolved        (FearEvolved)        Oct 19    Nov 2    Oct 18
+//   Turkey Trial        (TurkeyTrial)        Nov 22    Dec 7    Nov 21
+//   Winter Wonderland   (WinterWonderland)   Dec 14    Jan 5    Dec 13
+//
+// Where two overlap, the SHORTER one runs: New Year's (Dec 31 - Jan 1) inside
+// Winter Wonderland, and Summer Bash takes over from ARKaeology on Jul 1.
+// "-event=<token>" on the startup line overrides these until it is removed.
+//
+// Each map has its OWN complete config file, named after the map:
+//   config_TheIsland.json, config_ScorchedEarth.json, config_Gen2.json,
+//   config_Fjordur.json ... (case and a "_P" in the name don't matter)
+// Each one holds only that map: its settings, event dates, announcements and
+// what spawns there.
+//
+// When the server starts, the plugin works out which map it is running and
+// logs e.g. "map 'theisland' detected - using config_TheIsland.json". So the
+// same plugin folder, with every map's file in it, can be copied to every
+// server in the cluster. If a map has no config_<map>.json, config.json is
+// used instead, if there is one.
+//
+// ADDING A MOD MAP (or any map without a file): copy an existing config_<Map>.json,
+// rename the copy to the map's name (config_<MapName>.json - the name the log prints
+// as "map '<name>' detected"), set its "Map" value to the same name, then change what
+// you like inside it:
+//   - the creature blueprints in each region's "Dinos" list (Class, level range),
+//   - the boss blueprints in "Bosses" (Class, Name, Level, minions, arena, drops),
+//   - the region names: "SpawnLike:<native creature>" (spawn where that creature
+//     spawns on that map), a named region, or "Anywhere".
+// A creature or region the map does not have simply never spawns. Use blueprint paths
+// from the ARK wiki. Edit the text only and reload the plugin; do not regenerate the
+// files with tools\gen_events_config.js, which would overwrite hand edits.
+//
+// NOTHING IS EVER SPAWNED IN WATER OR IN A CAVE, on any map or event.
+// Water is asked of ARK itself. Caves are spotted three ways:
+//   - a spawn region with "cave" in its name (DinoSpawnEntriesCave1,
+//     ...CaveTek_Hard, ...RedwoodCave, ...SnowCave_Lost and so on),
+//   - a biome zone named for a cave ("Cave", "Lava Cave", "Hidden Grotto" ...), and
+//   - a structure prevention zone that is a cave's: one that blocks flyers but not every
+//     structure (or has cave, cavern, grotto or dungeon in its name), which is how the
+//     game marks caves on The Island, Scorched Earth and Aberration. Boss arenas and
+//     starting zones block everything and are not counted.
+// Caves are tested by their bounding box, so a spot just outside a cave's edge may be
+// skipped too. Stand somewhere and run ArkEventsRevival.CaveCheck to see what the
+// plugin thinks of that spot. With "DebugMode" on, the log says how many cave volumes
+// were found; if none were, it says what it did see.
+
+// ============================== config_TheIsland.json ==============================
+{
+  "ArkEventsRevival": {
+    // Master on/off switch for the whole plugin.
+    "Enabled": true,
+
+    // Logs spawns, refills, boss waves, regions seen and event switches to
+    // the server log. Handy while setting up; turn off once it's working.
+    "DebugMode": false,
+
+    // The event to run when AutoDetectActiveEvent is false and there is no
+    // -ActiveEvent= launch argument. One of these (any case):
+    //   FearEvolved       - Halloween
+    //   TurkeyTrial       - Thanksgiving
+    //   WinterWonderland  - Christmas
+    //   vday              - Valentine's Day
+    //   easter            - Easter
+    //   Summer            - Summer Bash
+    //   birthday          - ARK's Anniversary
+    //   ARKaeology        - the 2018 bone/fossil event
+    //   NewYear           - New Year's (every earlier event's skins and chibis)
+    // Each event has the creatures and items of ALL its ARK: Survival Evolved
+    // years merged, and the dates of its most recent run (ark.wiki.gg). When
+    // two are due on the same day, the shorter one runs.
+    // "" = no event.
+    "ActiveEvent": "",
+
+    // true = ignore ActiveEvent above and pick the event from the real date,
+    // using each event's AutoDateRanges. Checked every 5 minutes and right
+    // after load/reload, so the server can be left running all year.
+    //
+    // "-event=<token>" (or "-ActiveEvent=<token>") on the server's startup
+    // line beats the calendar: e.g. -event=FearEvolved runs Fear Evolved for as
+    // long as it stays on the startup line, whatever the date. Remove it and
+    // restart, and the calendar picks the event again.
+    //
+    // ArkEventsRevival.StartEvent <token> beats both (for testing) until
+    // ArkEventsRevival.StopEvent.
+    "AutoDetectActiveEvent": true,
+
+    // LEAVE THIS false. true makes the server pretend to be an official
+    // server while an event runs. That STOPS ADMINS LOGGING IN with
+    // enablecheats, and changes other official-only behaviour. Event
+    // cosmetics don't need it - the plugin sets ActiveEvent directly, the
+    // same thing -activeevent= does.
+    "ForceOfficialServerFlag": false,
+
+    // Event dinos and bosses never spawn within this distance of a player-built
+    // structure (ARK units: 300 = 1 foundation; 15000 = 50 foundations). 0 = off. Kill drops
+    // and boss crates still land where the creature died.
+    "KeepAwayFromStructures": 15000,
+    // After a creature spawns its real size is checked against rock, cliffs and
+    // caves and against other creatures. One buried or overlapping another is moved
+    // to clear ground nearby, or removed if there is none. true (the default) = on.
+    "CheckSpawnClearance": true,
+
+    // Event creatures only spawn on ground with no water on or under it (wild
+    // creatures, bosses and their minions). true (the default) = on.
+    "SpawnOnLandOnly": true,
+
+    // Wild event creatures spawn where their entry says (its regions, or where a native
+    // creature of that kind spawns). This is the chance, from 0 to 1, that a spawn instead
+    // goes to ANY other region of the map - every region equally likely - so they show up
+    // everywhere but much less often than at home. Never in water or a cave. 0.10 = one
+    // spawn in ten (the default); 0 = off. "Anywhere" entries are unaffected.
+    "OtherRegionChance": 0.10,
+
+    // Non-boss event creatures (wild ones AND boss minions) get a random level, in steps of
+    // 5 like a normal wild spawn, between the event's MinLevel and MaxLevel (5-150). Wyverns
+    // may go up to WyvernMaxLevel (190 - what ModifiedSpawnLevelDistribution allows them).
+    // Bosses always use their own Level (1).
+    "WyvernMaxLevel": 190,
+
+    // Wild event creatures keep at least this far from every other event creature
+    // (ARK units; 4000 = 40 m). The spawn point is also jittered, so the same
+    // learned point is never reused exactly. If no spot is that open the distance
+    // is halved, so a crowded map still fills. 0 = off.
+    "SpawnSpacing": 4000,
+
+    // Nothing spawns within this many GPS units of the map edge / world border,
+    // e.g. 5 = only between lat 5-95 and lon 5-95. 0 = off.
+    "KeepAwayFromMapEdge": 5,
+
+    // DISCORD: a message to a Discord webhook the day before each event starts
+    // (by its AutoDateRanges). Switch it on in ONE server's config only - every
+    // server in the cluster runs this plugin and would each send it.
+    //   {event} = the event's name, {token} = what goes after -event=
+    // Each reminder is sent once (remembered in discord_sent.txt).
+    "Discord": {
+      "Enabled": false,
+      "WebhookUrl": "https://discord.com/api/webhooks/...",
+      // Sent the day before the event starts (by its dates).
+      "EventTomorrowMessage": "**{event}** starts in 24 hours! Admins: add **-event={token}** to the server startup line before the next restart.",
+      // Sent when the event actually switches on (calendar or -event=). Not
+      // for StartEvent tests. "" = don't send that one.
+      "EventStartedMessage": "**{event}** has started! Event creatures, bosses and loot are live.",
+      // Sent once when the event's dates are over (the day after its last day).
+      "EventEndedMessage": "**{event}** has ended. Thanks for playing - see you next time!"
+    },
+
+    // Sent to everyone as a chat line AND an on-screen message.
+    //   {boss} = the boss's Name (see Bosses below)
+    //   {lat}  = where, as the in-game GPS shows it: "lat 50.1 lon 40.2"
+    // "" = don't announce that.
+    "Announcements": {
+      "ChatSender": "ARK Events",
+      // Sent a few seconds after a boss appears, and only if it is really
+      // there - a boss that failed to spawn or vanished straight away is
+      // never announced.
+      "BossSpawned": "{boss} has appeared at {lat}! Defeat it for event loot.",
+      // Sent when a boss is killed and its loot crates have dropped.
+      "BossDefeated": "{boss} has been defeated!",
+      // Told to a player a few seconds after they join the map (BossOnMapDelaySeconds,
+      // 15 by default), once for each boss
+      // that is up right now: {boss} = its name, {lat} = where it is at that moment.
+      // Nothing is sent when no boss is up or it has been killed. "" = never.
+      "BossOnMap": "{boss} is out there right now at {lat} - defeat it for event loot!",
+      // Seconds after joining before that message is sent.
+      "BossOnMapDelaySeconds": 15,
+      // Sent to players near a boss when it crosses its arena ring (it is sent
+      // back to its spawn point at LeashFoundations).
+      "BossLeavingArena": "{boss} is leaving the event area! Returning to the center in {seconds}s...",
+      // Told to a player the moment they walk into / out of a boss's dome.
+      "PlayerEnteredArena": "You entered the {boss} event area - you can fight it here!",
+      "PlayerLeftArena": "You left the {boss} event area - you can't damage it from outside the dome.",
+      // Told to a player whose hit on a boss or its minions is blocked because
+      // they (or their tame/turret) are outside the boss's red ring.
+      "OutsideArenaNoDamage": "{boss} can't be damaged from here - you must be inside the event range (the red ring)!"
+    },
+
+    "Events": {
+      "FearEvolved": {
+        // Real-world dates the event runs, used by AutoDetectActiveEvent.
+        // A range can wrap the new year (Dec 14 - Jan 5). [] = never picked
+        // by the calendar (StartEvent / -event= only).
+        "AutoDateRanges": [
+          { "StartMonth": 10, "StartDay": 19, "EndMonth": 11, "EndDay": 2 }
+        ],
+
+        // This event's spawns on this map.
+        //   Enabled              - false = no creatures/crates/bosses at all
+        //                          for this event (cosmetics still work)
+        //   CheckIntervalSeconds - how often creature and crate counts are
+        //                          checked and topped up
+        //   MinLevel / MaxLevel  - level range for Dinos (bosses have their own)
+        //   Regions              - what spawns, by spawn region (below)
+        "Spawns": {
+          "Enabled": true,
+          "CheckIntervalSeconds": 60,
+          "MinLevel": 5,
+          "MaxLevel": 150,
+
+          // Event dinos come in ONE AT A TIME, this many seconds apart, each at its
+          // own spot (kept 25 m from the others, dropped in from a little above).
+          "SpawnOneEverySeconds": 3,
+
+          // PLAYER BUFFS: ARK's own event buffs, given to every living player while
+          // the event runs and taken off when it ends. Fear Evolved's
+          // Buff_FearEvolvedMoundSpawner makes the game spawn Pumpkin, Scarecrow
+          // and Gravestone mounds around each player, as on official servers.
+          "PlayerBuffs": ["Blueprint'/Game/PrimalEarth/CoreBlueprints/Buffs/Buff_FearEvolvedMoundSpawner.Buff_FearEvolvedMoundSpawner'"],
+
+          // MOUNDS: lootable piles kept around each player during the event (the
+          // generated configs use ARKaeology's fossil pile for ARKaeology). Each
+          // player has up to PerPlayer within MaxDistance (units; 3000 = 30 m),
+          // placed on dry land MinDistance-MaxDistance away, with MinItems-MaxItems
+          // different Items. Checked every minute; {} = none.
+          "Mounds": {},
+
+          // KILL DROPS: when an event dino is killed, one crate lands where it
+          // died - a random one of Crates (this map's own supply crates), with
+          // MinItems-MaxItems DIFFERENT items picked from Items (Chance = share),
+          // and nothing else. EveryKills = every Nth event dino kill drops one (3 =
+          // every 3rd kill). Or use "Chance" instead (0.25 = random 1 in 4). FallbackCrate is used if the picked one won't spawn.
+          // With DebugMode on, every one is logged with its GPS position.
+          "KillDrops": { "Crates": ["Blueprint'/Game/PrimalEarth/Structures/SupplyCrate_Level60.SupplyCrate_Level60'"], "FallbackCrate": "Blueprint'/Game/PrimalEarth/Structures/SupplyCrate_Level60.SupplyCrate_Level60'", "EveryKills": 3, "MinItems": 2, "MaxItems": 5, "Items": [] },
+
+          // Regions: spawn region -> three lists: Dinos, Drops,
+          // Bosses. Leave a list empty ([]) for nothing - e.g. events with no boss
+          // have "Bosses": [].
+          //
+          // "SpawnLike:<class>" GROUPS: the generated configs group every event
+          // dino by where it goes, e.g.
+          //   "SpawnLike:Rex_Character_BP"    - where wild Rexes spawn
+          //                                     (Skeletal Rex, Rex Ghost, Tek Rex)
+          //   "SpawnLike:Wyvern_Character_BP" - the wyvern trenches (zombie wyverns)
+          //   "SpawnLike:Dodo_Character_BP"   - where Dodos spawn (Zomdodo...)
+          // The part after the colon is part of the game creature's class name.
+          // These dinos spawn ONLY where that creature spawns, so they stay on
+          // its native maps - e.g. Reaper ghosts only on Aberration. Run
+          // ArkEventsRevival.ShowSpawnLike during an event to see which ones
+          // this map gets. Move a dino to "Anywhere" to spawn it on every map.
+          //
+          // SPAWN REGION: one of the map's DinoSpawnEntries... names, exactly as
+          // ArkEventsRevival.ListRegions prints them (e.g. "DinoSpawnEntriesGrassland_C"),
+          // or "Anywhere" for any spawn point on the map (never water, never caves).
+          // Spawn points are learned from where the game's own wild dinos appear, so
+          // a region fills in a minute or two after the server starts. To use more
+          // than one region for the same dino, list it under each region - each
+          // listing is counted on its own.
+          "Regions": {
+            "DinoSpawnEntriesGrassland_C": {
+              // DINOS: event creatures that roam wild.
+              //   Class    - full blueprint path, pasted straight from the ARK
+              //              wiki Creature IDs page (Blueprint'/Game/.../X.X' works).
+              //   MinCount - once killed down to this many (or fewer) alive,
+              //              1 to (MaxCount - alive) more spawn at random points in
+              //              this region.
+              //   RequireNative - optional class name part: only spawn this entry on
+              //              maps where the game's own creatures of that kind spawn
+              //              (the generated "Anywhere" copies use it, so e.g. Reaper
+              //              ghosts roam anywhere on Aberration but nowhere else).
+              //   RespawnDelayMinutes - once killed down to MinCount, wait this long
+              //              before filling back up (e.g. 5 / 30 / 30 / 30 = at 5
+              //              left, wait 30 min, then back up to 30, one at a time).
+              //   RespawnTo - once down to MinCount, topped back up to a random
+              //              total between RespawnTo and MaxCount (e.g. 10 / 20 / 30
+              //              = at 10 left, back up to 20-30). Leave out for any
+              //              amount up to MaxCount.
+              //   MaxCount - never more than this alive from this entry. 0 = off.
+              //   SpawnLike - optional: spawn where the game's OWN creatures of
+              //              this kind spawn - part of their class name, e.g.
+              //              "Rex_Character_BP" = wherever wild Rexes appear,
+              //              "Wyvern_Character_BP" = the wyvern trenches. Used
+              //              first; the region is the fallback when the map has
+              //              none of them. Every generated entry has one.
+              //              ListRegions shows how many creature types the
+              //              plugin has seen spawning.
+              // Tamed ones stop counting and are never removed. MinCount must be
+              // below MaxCount (0 is fine: "refill only when all are dead").
+              "Dinos": [
+                { "Class": "Blueprint'/Game/PrimalEarth/Dinos/Dodo/ZombieDodo_Character_BP.ZombieDodo_Character_BP'", "MinCount": 10, "RespawnTo": 20, "MaxCount": 30, "SpawnLike": "Dodo_Character_BP" }
+              ],
+              "Drops": [],
+              "Bosses": []
+            },
+
+            "Anywhere": {
+              "Dinos": [
+                { "Class": "Blueprint'/Game/PrimalEarth/Dinos/Raptor/Bone_MegaRaptor_Character_BP.Bone_MegaRaptor_Character_BP'", "MinCount": 2, "MaxCount": 8 }
+              ],
+
+              // DROPS: supply crates filled with this event's items, placed on the
+              // ground at random points in the region, at least 15 m apart.
+              //   Crate    - a crate from the ARK wiki Beacon IDs page
+                //              (the configs use SupplyCrate_DinoHat / SupplyCrate_PlayerHat).
+              //   MinCount / MaxCount - as Dinos: once looted down to MinCount,
+              //              more are placed, up to MaxCount.
+              //   FallbackCrate - used instead when Crate won't load or spawn
+              //              (the configs use the Dino Hat / Player Hat crates and fall back to SupplyCrate_UnderwaterCaveTier3).
+              //   RespawnTo - once looted down to MinCount, topped back up to a
+              //              random total between this and MaxCount.
+              //   NearEventDinos - true = place crates a few metres from spots
+              //              where this event's dinos spawned (the region is
+              //              the fallback, e.g. for events with no dinos).
+              //   ItemsPerCrate - e.g. 10 = exactly 10 items per crate, picked
+              //              from Items with Chance as each one's share. 0 or
+              //              left out = each item rolled on its own Chance.
+              //   IncludeCrateLoot - also roll the crate's normal loot. false = ONLY
+                //              the Items below (any loot the crate makes itself
+                //              is emptied out first).
+              //   Items    - Class from the ARK wiki Item IDs pages, MinQuantity to
+              //              MaxQuantity of it, Chance 0-1 rolled per crate.
+              // A crate looted EMPTY is removed and stops counting.
+              "Drops": [
+                {
+                  "Crate": "Blueprint'/Game/PrimalEarth/Structures/SupplyCrate_DinoHat.SupplyCrate_DinoHat'",
+                  "FallbackCrate": "Blueprint'/Game/PrimalEarth/Structures/SupplyCrate_UnderwaterCaveTier3.SupplyCrate_UnderwaterCaveTier3'",
+                  "MinCount": 2,
+                  "RespawnTo": 10,
+                  "MaxCount": 10,
+                  "NearEventDinos": true,
+                  "ItemsPerCrate": 10,
+                  "IncludeCrateLoot": false,
+                  "Items": [
+                    { "Class": "Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Consumables/PrimalItemConsumable_FE_Crafted_CandyCorn.PrimalItemConsumable_FE_Crafted_CandyCorn'", "MinQuantity": 1, "MaxQuantity": 3, "Chance": 0.6 }
+                  ]
+                }
+              ],
+
+              // BOSSES: spawned in this region on a timer, announced to everyone
+              // with their GPS position, send waves of minions, and drop a ring of
+              // loot crates where they die.
+              //   Class          - full blueprint path (ARK wiki Creature IDs).
+              //   Name           - what the announcements call it ({boss}). "" = the
+              //                    creature's own name.
+              //   Amount         - how many of this boss can be alive at once.
+              //   RespawnMinutes - time to spawn: once fewer than Amount are alive,
+              //                    the missing ones appear after this many real
+              //                    minutes. The first comes RespawnMinutes after
+              //                    the event starts (ArkEventsRevival.SpawnBossNow
+              //                    skips the wait).
+              //   NightOnly      - true = once due, wait for in-game night
+              //                    (21:50 - 05:15) before appearing.
+              //   Level          - the boss's level.
+              //   MinionClasses  - creatures sent in waves while the boss lives,
+              //                    taken in turn from this list.
+              //   MinionLevel    - the minions' level.
+                //   MaxMinions     - minions kept around the boss (5). They come one
+                //                    at a time; when any are killed, MinionRespawnSeconds
+                //                    (120 = 2 min) later they come back one at a time
+                //                    to MaxMinions - until the boss is dead.
+              //   ClearRadius    - removes wild (never tamed) dinos within this
+              //                    distance of the spawn point first. 0 = off.
+              //   DefeatCrates   - dropped in a ring where the boss dies:
+              //       Crate            - Beacon IDs crate
+              //       Count            - how many crates
+              //       ItemsPerCrate    - how many items go in each crate
+              //       IncludeCrateLoot - also the crate's normal loot
+              //       RingRadius       - ring size (700 = 7 m)
+              //       Items            - picked from at random, ItemsPerCrate times
+              //                          per crate; Chance is each item's share of
+              //                          the picks (1.0 comes up twice as often as
+              //                          0.5); MinQuantity-MaxQuantity per pick.
+              //     Crates left looted empty are removed; any still full when the
+              //     event ends are removed with it.
+              // Each Bosses entry runs on its own, so three entries with Amount 1 can
+              // mean three bosses up at once. Stagger their RespawnMinutes, or list
+              // just one, if you want one at a time.
+              "Bosses": [
+                {
+                  "Class": "Blueprint'/Game/PrimalEarth/Dinos/DodoRex/DodoRex_Character_BP.DodoRex_Character_BP'",
+                  "Name": "The DodoRex",
+                  "Amount": 1,
+                  "SpawnAtHours": [11, 12],
+                  "Level": 1,
+                  "MinionClasses": [
+                    "Blueprint'/Game/PrimalEarth/Dinos/Dodo/ZombieDodo_Character_BP.ZombieDodo_Character_BP'"
+                  ],
+                  "MinionLevel": 60,
+                  "MaxMinions": 5,
+                  "MinionRespawnSeconds": 120,
+                  "ClearRadius": 1000,
+                  // A red ring on the ground, ArenaFoundations out from the boss's spawn
+                  // point, shows players the fight area. Past LeashFoundations (or in
+                  // water) the boss is put straight back at its spawn point, so it never
+                  // dies in water or far off. Its minions are held the same way.
+                  // Players (and their tames/turrets) outside the ring can't damage
+                  // the boss or its minions. 1 foundation = 300 units.
+                  "ArenaFoundations": 100,
+                  "LeashFoundations": 130,
+                  // Crossing the dome edge starts this countdown (players around are
+                  // warned each second from 5); still outside at 0, it is sent back.
+                  "ReturnCountdownSeconds": 10,
+                  // A shield dome over the arena (Extinction's orbital-drop shield,
+                  // as the SafeZone plugin uses): see-through, players and tames walk
+                  // in and out, attacks from outside do nothing. false = a ring of
+                  // lines instead. DomeColor = red, green, blue from 0 to 1.
+                  // Takes no damage for this many minutes -> heals back to full. 0 = never.
+                  "HealAfterMinutesNoDamage": 10,
+                  "ShieldDome": false,
+                  "DefeatCrates": {
+                    "Crate": "Blueprint'/Game/PrimalEarth/Structures/SupplyCrate_DinoHat.SupplyCrate_DinoHat'",
+                    "Count": 10,
+                    "ItemsPerCrate": 10,
+                    "IncludeCrateLoot": false,
+                    "RingRadius": 700,
+                    // true = spread evenly round the arena edge, just inside the stacked
+                    // lines (moved inward onto dry land); false = a small ring of
+                    // RingRadius where the boss fell.
+                    "AroundArena": true,
+                    "Items": [
+                      { "Class": "Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Consumables/PrimalItemConsumable_FE_Crafted_CandyCorn.PrimalItemConsumable_FE_Crafted_CandyCorn'", "MinQuantity": 1, "MaxQuantity": 3, "Chance": 0.6 }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+      // ... one entry per event
+    }
+  }
+}
+
+// ---- when an event ends ----
+// Its crates and every UNTAMED creature it spawned on the map are removed.
+// Tamed ones stay with their owners.
+//
+// Reloading or updating the plugin removes nothing: what it spawned is
+// recorded in spawned_<map>.json and picked back up. The same goes for a
+// server restart. Anything whose event has ended by then, or which was
+// taken out of the config, is removed instead. The map's own wild dinos are
+// never touched.
+//
+// ---- console commands (admin) ----
+//   ArkEventsRevival.Reload             - re-read this map's config file
+//   ArkEventsRevival.StartEvent <token> - run an event now, for testing
+//   ArkEventsRevival.StopEvent          - end it and go back to the calendar
+//   ArkEventsRevival.SpawnBossNow       - spawn this map's bosses now
+//   ArkEventsRevival.ListRegions        - this map's spawn regions (to paste into
+//                                         the map file) and how many of each
+//                                         one's points are usable, water or cave
+//   ArkEventsRevival.ShowSpawnLike      - which SpawnLike event dinos this map
+//                                         gets (their normal creature spawns here)
+//   ArkEventsRevival.CaveCheck          - (in-game) is the spot you stand on
+//                                         water / cave / usable
+//
+// ---- paths that won't load ----
+// Each bad path is logged once:
+//   "... '<path>' would not load - check the path against the ARK wiki ID pages."
+//   "... '<path>' is the wrong kind of blueprint ..." (e.g. an item path in Dinos)
+// Wiki pages: Creature_IDs, Item_IDs (and its Skins / Unobtainable pages), Beacon_IDs.
