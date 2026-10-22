@@ -10,6 +10,8 @@ Anniversary and New Year's - with event creatures, bosses, drops and Discord ann
 
 ![Event spawn beams in the sky over the island](screenshots/event-spawn-beams.webp)
 
+![Discord announcements the day before an event and when it starts](screenshots/discord-announcements.png)
+
 ## Install
 1. Download the zip from [Releases](../../releases) (or take the [`ArkEventsRevival`](ArkEventsRevival) folder) and copy that folder into your server's `ShooterGame/Binaries/Win64/ArkApi/Plugins/`.
 2. Each map has its own config: `config_<Map>.json` (`config_TheIsland.json`, `config_Gen2.json`, ...).
