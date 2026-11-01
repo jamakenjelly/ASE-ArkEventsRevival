@@ -25,15 +25,17 @@ Event creatures never spawn in water or in a cave. Events start on their own dat
 
 **Events.** With `AutoDetectActiveEvent` on, each event runs by itself between its own dates (`AutoDateRanges` in
 every config, set to each event's most recent official run). You can also force one: set `ActiveEvent` in the
-config, start the server with `-event=<name>`, or use the console commands below. `ForceOfficialServerFlag`
-(off by default) makes ARK's own "official server" check true while an event runs, which is what unlocks the
-event cosmetics and recipes.
+config, start the server with `-event=<name>`, or use the console commands below. The plugin sets the game's own
+ActiveEvent value, which is what unlocks the event cosmetics and recipes; it never makes the server look official.
+A map with no `config_<Map>.json` of its own uses `config_TheIsland.json` (with Discord posts turned off).
 
-**Wild event creatures.** The plugin learns real spawn points from the game's own wild spawns, kept per region.
-Each event lists creatures per region in `Spawns` -> `Regions`: `SpawnLike:<native creature>` spawns where that
-native creature spawns on the map, a named region uses that region's points, and `Anywhere` uses any of them.
-Spawns are paced by `CheckIntervalSeconds` and `SpawnOneEverySeconds`, and a small chance (`OtherRegionChance`,
-10% by default) sends a spawn to a different region instead, so they turn up everywhere but far less than at home.
+**Wild event creatures.** They spawn alongside the game's own wildlife: every creature the game's spawn zones spawn
+has a chance (`GameWeight`, 0.25 by default) of bringing one event creature, put right beside it, until the entry's
+`MaxCount` are alive. So they appear wherever the normal wildlife of that kind lives, spread over the whole map.
+Each event lists creatures per region in `Spawns` -> `Regions`: `SpawnLike:<native creature>` spawns beside that
+native creature, a named region uses that region's spawns, and `Anywhere` uses any of them (with `RequireNative`, only
+on maps where that creature lives). A small chance (`OtherRegionChance`) lets a native creature turn up beside a
+game spawn in a different region too.
 Creatures get a random level in steps of 5 between `MinLevel` and `MaxLevel` (wyverns up to `WyvernMaxLevel`);
 bosses use their own `Level`.
 
@@ -46,7 +48,8 @@ region name, by biome zones named for a cave, and by the game's cave building/fl
 the creature died. It finds the ground first, so a flyer killed high up still drops its crate on the ground.
 
 **Bosses.** Each boss spawns at its `SpawnAtHours` (in-game hours) in an arena it clears (`ClearRadius`,
-`ArenaFoundations`), with minions (`MinionClasses`, `MaxMinions`, `MinionRespawnSeconds`). It is pulled back if it
+`ArenaFoundations`), with minions sent in waves: `MaxMinions` (5) at a time, random creatures native to the map (`RandomMinions`; or only
+`MinionClasses`). When a wave is dead the next comes after `MinionRespawnSeconds`, up to `WaveCount` (10) waves. It is pulled back if it
 wanders off (`LeashFoundations`), heals if nobody damages it for `HealAfterMinutesNoDamage`, can have a shield dome,
 and drops `DefeatCrates` when it dies. Players joining a map are told where its boss is. The messages for all of this
 are in `Announcements`, and `Discord` posts them to your webhook if you set one.

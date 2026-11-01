@@ -3,9 +3,7 @@
     "Map": "Aberration",
     "Enabled": true,
     "DebugMode": false,
-    "ActiveEvent": "",
     "AutoDetectActiveEvent": true,
-    "ForceOfficialServerFlag": false,
     "KeepAwayFromStructures": 15000,
     "KeepAwayFromMapEdge": 5,
     "Discord": {
@@ -30,9 +28,9 @@
           { "StartMonth": 10, "StartDay": 19, "EndMonth": 11, "EndDay": 2 }
         ],
         "Spawns": {
+          "GameWeight": 0.25,
           "Enabled": true,
           "CheckIntervalSeconds": 60,
-          "SpawnOneEverySeconds": 3,
           "MinLevel": 5,
           "MaxLevel": 150,
           "PlayerBuffs": ["Blueprint'/Game/PrimalEarth/CoreBlueprints/Buffs/Buff_FearEvolvedMoundSpawner.Buff_FearEvolvedMoundSpawner'"],
@@ -246,6 +244,8 @@
                   "MinionClasses": ["Blueprint'/Game/PrimalEarth/Dinos/Dodo/ZombieDodo_Character_BP.ZombieDodo_Character_BP'", "Blueprint'/Game/PrimalEarth/Dinos/Raptor/Bone_MegaRaptor_Character_BP.Bone_MegaRaptor_Character_BP'", "Blueprint'/Game/PrimalEarth/Dinos/Direwolf/Ghost_Direwolf_Character_BP.Ghost_Direwolf_Character_BP'"],
                   "MinionLevel": 60,
                   "MaxMinions": 5,
+                  "RandomMinions": true,
+                  "WaveCount": 10,
                   "MinionRespawnSeconds": 120,
                   "ClearRadius": 1000,
                   "ArenaFoundations": 100,
@@ -346,9 +346,9 @@
           { "StartMonth": 11, "StartDay": 22, "EndMonth": 12, "EndDay": 7 }
         ],
         "Spawns": {
+          "GameWeight": 0.25,
           "Enabled": true,
           "CheckIntervalSeconds": 60,
-          "SpawnOneEverySeconds": 3,
           "MinLevel": 5,
           "MaxLevel": 150,
           "PlayerBuffs": [],
@@ -430,6 +430,8 @@
                   "MinionClasses": ["Blueprint'/Game/PrimalEarth/Dinos/Dodo/ZombieDodo_Character_BP.ZombieDodo_Character_BP'", "Blueprint'/Game/PrimalEarth/Dinos/Raptor/Bone_MegaRaptor_Character_BP.Bone_MegaRaptor_Character_BP'", "Blueprint'/Game/PrimalEarth/Dinos/Direwolf/Ghost_Direwolf_Character_BP.Ghost_Direwolf_Character_BP'"],
                   "MinionLevel": 60,
                   "MaxMinions": 5,
+                  "RandomMinions": true,
+                  "WaveCount": 10,
                   "MinionRespawnSeconds": 120,
                   "ClearRadius": 1000,
                   "ArenaFoundations": 100,
@@ -503,6 +505,8 @@
                   "MinionClasses": ["Blueprint'/Game/PrimalEarth/Dinos/Dodo/TurkeyBase_Character_BP.TurkeyBase_Character_BP'"],
                   "MinionLevel": 60,
                   "MaxMinions": 5,
+                  "RandomMinions": true,
+                  "WaveCount": 10,
                   "MinionRespawnSeconds": 120,
                   "ClearRadius": 1000,
                   "ArenaFoundations": 100,
@@ -577,9 +581,9 @@
           { "StartMonth": 12, "StartDay": 14, "EndMonth": 1, "EndDay": 5 }
         ],
         "Spawns": {
+          "GameWeight": 0.25,
           "Enabled": true,
           "CheckIntervalSeconds": 60,
-          "SpawnOneEverySeconds": 3,
           "MinLevel": 5,
           "MaxLevel": 150,
           "PlayerBuffs": [],
@@ -722,6 +726,8 @@
                   "MinionClasses": ["Blueprint'/Game/PrimalEarth/Dinos/Dodo/ZombieDodo_Character_BP.ZombieDodo_Character_BP'", "Blueprint'/Game/PrimalEarth/Dinos/Raptor/Bone_MegaRaptor_Character_BP.Bone_MegaRaptor_Character_BP'", "Blueprint'/Game/PrimalEarth/Dinos/Direwolf/Ghost_Direwolf_Character_BP.Ghost_Direwolf_Character_BP'"],
                   "MinionLevel": 60,
                   "MaxMinions": 5,
+                  "RandomMinions": true,
+                  "WaveCount": 10,
                   "MinionRespawnSeconds": 120,
                   "ClearRadius": 1000,
                   "ArenaFoundations": 100,
@@ -857,9 +863,9 @@
           { "StartMonth": 2, "StartDay": 10, "EndMonth": 2, "EndDay": 17 }
         ],
         "Spawns": {
+          "GameWeight": 0.25,
           "Enabled": true,
           "CheckIntervalSeconds": 60,
-          "SpawnOneEverySeconds": 3,
           "MinLevel": 5,
           "MaxLevel": 150,
           "PlayerBuffs": [],
@@ -932,9 +938,9 @@
           { "StartMonth": 4, "StartDay": 4, "EndMonth": 4, "EndDay": 24 }
         ],
         "Spawns": {
+          "GameWeight": 0.25,
           "Enabled": true,
           "CheckIntervalSeconds": 60,
-          "SpawnOneEverySeconds": 3,
           "MinLevel": 5,
           "MaxLevel": 150,
           "PlayerBuffs": [],
@@ -1015,9 +1021,9 @@
           { "StartMonth": 7, "StartDay": 1, "EndMonth": 7, "EndDay": 26 }
         ],
         "Spawns": {
+          "GameWeight": 0.25,
           "Enabled": true,
           "CheckIntervalSeconds": 60,
-          "SpawnOneEverySeconds": 3,
           "MinLevel": 5,
           "MaxLevel": 150,
           "PlayerBuffs": [],
@@ -1093,9 +1099,9 @@
           { "StartMonth": 6, "StartDay": 2, "EndMonth": 6, "EndDay": 6 }
         ],
         "Spawns": {
+          "GameWeight": 0.25,
           "Enabled": true,
           "CheckIntervalSeconds": 60,
-          "SpawnOneEverySeconds": 3,
           "MinLevel": 5,
           "MaxLevel": 150,
           "PlayerBuffs": [],
@@ -1145,6 +1151,8 @@
                   "MinionClasses": ["Blueprint'/Game/PrimalEarth/Dinos/Dodo/ZombieDodo_Character_BP.ZombieDodo_Character_BP'", "Blueprint'/Game/PrimalEarth/Dinos/Raptor/Bone_MegaRaptor_Character_BP.Bone_MegaRaptor_Character_BP'", "Blueprint'/Game/PrimalEarth/Dinos/Direwolf/Ghost_Direwolf_Character_BP.Ghost_Direwolf_Character_BP'"],
                   "MinionLevel": 60,
                   "MaxMinions": 5,
+                  "RandomMinions": true,
+                  "WaveCount": 10,
                   "MinionRespawnSeconds": 120,
                   "ClearRadius": 1000,
                   "ArenaFoundations": 100,
@@ -1187,9 +1195,9 @@
           { "StartMonth": 6, "StartDay": 15, "EndMonth": 7, "EndDay": 17 }
         ],
         "Spawns": {
+          "GameWeight": 0.25,
           "Enabled": true,
           "CheckIntervalSeconds": 60,
-          "SpawnOneEverySeconds": 3,
           "MinLevel": 5,
           "MaxLevel": 150,
           "PlayerBuffs": [],
@@ -1321,9 +1329,9 @@
           { "StartMonth": 12, "StartDay": 31, "EndMonth": 1, "EndDay": 1 }
         ],
         "Spawns": {
+          "GameWeight": 0.25,
           "Enabled": true,
           "CheckIntervalSeconds": 60,
-          "SpawnOneEverySeconds": 3,
           "MinLevel": 5,
           "MaxLevel": 150,
           "PlayerBuffs": [],

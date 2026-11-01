@@ -29,7 +29,7 @@
 // When the server starts, the plugin works out which map it is running and
 // logs e.g. "map 'theisland' detected - using config_TheIsland.json". So the
 // same plugin folder, with every map's file in it, can be copied to every
-// server in the cluster. If a map has no config_<map>.json, config.json is
+// server in the cluster. If a map has no config_<map>.json, config_TheIsland.json (without Discord posts) is
 // used instead, if there is one.
 //
 // ADDING A MOD MAP (or any map without a file): copy an existing config_<Map>.json,
@@ -83,7 +83,6 @@
     // years merged, and the dates of its most recent run (ark.wiki.gg). When
     // two are due on the same day, the shorter one runs.
     // "" = no event.
-    "ActiveEvent": "",
 
     // true = ignore ActiveEvent above and pick the event from the real date,
     // using each event's AutoDateRanges. Checked every 5 minutes and right
@@ -97,13 +96,6 @@
     // ArkEventsRevival.StartEvent <token> beats both (for testing) until
     // ArkEventsRevival.StopEvent.
     "AutoDetectActiveEvent": true,
-
-    // LEAVE THIS false. true makes the server pretend to be an official
-    // server while an event runs. That STOPS ADMINS LOGGING IN with
-    // enablecheats, and changes other official-only behaviour. Event
-    // cosmetics don't need it - the plugin sets ActiveEvent directly, the
-    // same thing -activeevent= does.
-    "ForceOfficialServerFlag": false,
 
     // Event dinos and bosses never spawn within this distance of a player-built
     // structure (ARK units: 300 = 1 foundation; 15000 = 50 foundations). 0 = off. Kill drops
@@ -132,10 +124,18 @@
     "WyvernMaxLevel": 190,
 
     // Wild event creatures keep at least this far from every other event creature
-    // (ARK units; 4000 = 40 m). The spawn point is also jittered, so the same
-    // learned point is never reused exactly. If no spot is that open the distance
-    // is halved, so a crowded map still fills. 0 = off.
-    "SpawnSpacing": 4000,
+    // (ARK units; 10000 = 100 m). If no spot is that open the distance is halved
+    // (twice), so a crowded map still fills. 0 = off.
+    "SpawnSpacing": 10000,
+
+    // Each spawn is placed up to this far (ARK units; 15000 = 150 m) from a point where the
+    // game's own creatures of that kind spawn, evenly over the circle, so the event creatures
+    // cover the region's whole area instead of bunching around a few spawn points.
+    "SpawnScatter": 15000,
+
+    // How many spots are tried for each spawn (1-30). The one farthest from every other event
+    // creature is used - higher = more even spread, a little more work per spawn. 1 = old random pick.
+    "SpawnCandidates": 8,
 
     // Nothing spawns within this many GPS units of the map edge / world border,
     // e.g. 5 = only between lat 5-95 and lon 5-95. 0 = off.
@@ -210,9 +210,14 @@
           "MinLevel": 5,
           "MaxLevel": 150,
 
-          // Event dinos come in ONE AT A TIME, this many seconds apart, each at its
-          // own spot (kept 25 m from the others, dropped in from a little above).
-          "SpawnOneEverySeconds": 3,
+          // Wild event creatures are spawned ALONGSIDE the game's own spawns: every creature the game's
+          // spawn zones spawn (of the entry's region, or the native creature it is "like") is a chance for
+          // one event creature, put right beside it. So they appear wherever the normal wildlife of that kind
+          // spawns and come back as the game respawns its own. MaxCount still caps how many are alive;
+          // MinCount / RespawnTo / RespawnDelayMinutes do nothing for them.
+          // The chance (0-1) that each game spawn also brings an event creature (0.05 = 1 in 20), until
+          // MaxCount are alive. Per creature entry: "GameWeight".
+          "GameWeight": 0.25,
 
           // PLAYER BUFFS: ARK's own event buffs, given to every living player while
           // the event runs and taken off when it ends. Fear Evolved's
@@ -356,10 +361,10 @@
               //   MinionClasses  - creatures sent in waves while the boss lives,
               //                    taken in turn from this list.
               //   MinionLevel    - the minions' level.
-                //   MaxMinions     - minions kept around the boss (5). They come one
-                //                    at a time; when any are killed, MinionRespawnSeconds
-                //                    (120 = 2 min) later they come back one at a time
-                //                    to MaxMinions - until the boss is dead.
+              //   MaxMinions     - minions per WAVE (5), one every few seconds. When the whole wave is dead,
+              //                    after MinionRespawnSeconds the next wave comes, up to WaveCount waves (10).
+              //   RandomMinions  - true (default): each minion is a random creature native to the map (the
+              //                    event's wild list); false: only the MinionClasses below.
               //   ClearRadius    - removes wild (never tamed) dinos within this
               //                    distance of the spawn point first. 0 = off.
               //   DefeatCrates   - dropped in a ring where the boss dies:
@@ -389,6 +394,7 @@
                   ],
                   "MinionLevel": 60,
                   "MaxMinions": 5,
+                  "RandomMinions": true,
                   "MinionRespawnSeconds": 120,
                   "ClearRadius": 1000,
                   // A red ring on the ground, ArenaFoundations out from the boss's spawn
