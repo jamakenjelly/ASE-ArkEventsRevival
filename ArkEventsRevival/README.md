@@ -24,10 +24,34 @@ Event creatures never spawn in water or in a cave. Events start on their own dat
 ## How it works
 
 **Events.** With `AutoDetectActiveEvent` on, each event runs by itself between its own dates (`AutoDateRanges` in
-every config, set to each event's most recent official run). You can also force one: set `ActiveEvent` in the
+every config, set to each event's most recent official run, and no two events overlap). You can also force one: set `ActiveEvent` in the
 config, start the server with `-event=<name>`, or use the console commands below. The plugin sets the game's own
 ActiveEvent value, which is what unlocks the event cosmetics and recipes; it never makes the server look official.
 A map with no `config_<Map>.json` of its own uses `config_TheIsland.json` (with Discord posts turned off).
+
+**Event dates** (start - end, inclusive):
+
+| Event | Dates |
+|---|---|
+| New Year's | Dec 31 - Jan 1 |
+| Love Evolved | Feb 10 - Feb 17 |
+| Eggcellent Adventure | Apr 4 - Apr 24 |
+| ARK's Anniversary | Jun 2 - Jun 6 |
+| ARKaeology | Jun 15 - Jun 30 |
+| Summer Bash | Jul 1 - Jul 26 |
+| Fear Evolved | Oct 19 - Nov 2 |
+| Turkey Trial | Nov 22 - Dec 7 |
+| Winter Wonderland | Dec 14 - Dec 30 |
+
+**Discord notices.** The server that has Discord switched on posts the day before an event starts, when it starts,
+the day before it ends ("ends tomorrow") and the day after it ends. If an event was started by hand with
+`-event=<name>` on the startup line it stays on for as long as that argument is there, whatever the date - the
+"ends tomorrow" post reminds admins to remove it within 24 hours (or leave it to keep the event going), and the
+"ended" post is sent once the argument has been removed.
+
+**Clock check.** Once an hour the plugin compares the server's date with the real time (fetched over HTTPS from
+worldtimeapi.org). If the server clock is more than 6 hours out, calendar starts and Discord notices are paused and an
+error is logged until the clock is fixed. If the time service cannot be reached the clock is trusted.
 
 **Wild event creatures.** They spawn alongside the game's own wildlife: every creature the game's spawn zones spawn
 has a chance (`GameWeight`, 0.25 by default) of bringing one event creature, put right beside it, until the entry's

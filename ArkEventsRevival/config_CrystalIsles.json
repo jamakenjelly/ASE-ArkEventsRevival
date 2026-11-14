@@ -9,7 +9,7 @@
     "Discord": {
       "Enabled": false,
       "WebhookUrl": "",
-      "EventTomorrowMessage": "**{event}** starts in 24 hours! Admins: add **-event={token}** to the server startup line before the next restart.",
+      "EventTomorrowMessage": "**{event}** starts in 24 hours! Admins: add **-event={token}** to the server startup line before the next restart. Remove **-event={token}** again on its end date - it stays on until you do.",
       "EventStartedMessage": "**{event}** has started! Event creatures, bosses and loot are live.",
       "EventEndedMessage": "**{event}** has ended. Thanks for playing - see you next time!"
     },
@@ -833,7 +833,7 @@
       },
       "WinterWonderland": {
         "AutoDateRanges": [
-          { "StartMonth": 12, "StartDay": 14, "EndMonth": 1, "EndDay": 5 }
+          { "StartMonth": 12, "StartDay": 14, "EndMonth": 12, "EndDay": 30 }
         ],
         "Spawns": {
           "GameWeight": 0.25,
@@ -1459,7 +1459,7 @@
       },
       "ARKaeology": {
         "AutoDateRanges": [
-          { "StartMonth": 6, "StartDay": 15, "EndMonth": 7, "EndDay": 17 }
+          { "StartMonth": 6, "StartDay": 15, "EndMonth": 6, "EndDay": 30 }
         ],
         "Spawns": {
           "GameWeight": 0.25,

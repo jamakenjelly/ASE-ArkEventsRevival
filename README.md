@@ -32,10 +32,34 @@ Event creatures never spawn in water or in a cave. Events start on their own dat
 ## How it works
 
 **Events.** With `AutoDetectActiveEvent` on, each event runs by itself between its own dates (`AutoDateRanges` in
-every config, set to each event's most recent official run). You can also force one: set `ActiveEvent` in the
+every config, set to each event's most recent official run, and no two events overlap). You can also force one: set `ActiveEvent` in the
 config, start the server with `-event=<name>`, or use the console commands below. `ForceOfficialServerFlag`
 (off by default) makes ARK's own "official server" check true while an event runs, which is what unlocks the
 event cosmetics and recipes.
+
+**Event dates** (start - end, inclusive):
+
+| Event | Dates |
+|---|---|
+| New Year's | Dec 31 - Jan 1 |
+| Love Evolved | Feb 10 - Feb 17 |
+| Eggcellent Adventure | Apr 4 - Apr 24 |
+| ARK's Anniversary | Jun 2 - Jun 6 |
+| ARKaeology | Jun 15 - Jun 30 |
+| Summer Bash | Jul 1 - Jul 26 |
+| Fear Evolved | Oct 19 - Nov 2 |
+| Turkey Trial | Nov 22 - Dec 7 |
+| Winter Wonderland | Dec 14 - Dec 30 |
+
+**Discord notices.** The server that has Discord switched on posts the day before an event starts, when it starts,
+the day before it ends ("ends tomorrow") and the day after it ends. If an event was started by hand with
+`-event=<name>` on the startup line it stays on for as long as that argument is there, whatever the date - the
+"ends tomorrow" post reminds admins to remove it within 24 hours (or leave it to keep the event going), and the
+"ended" post is sent once the argument has been removed.
+
+**Clock check.** Once an hour the plugin compares the server's date with the real time (fetched over HTTPS from
+worldtimeapi.org). If the server clock is more than 6 hours out, calendar starts and Discord notices are paused and an
+error is logged until the clock is fixed. If the time service cannot be reached the clock is trusted.
 
 **Wild event creatures.** The plugin learns real spawn points from the game's own wild spawns, kept per region.
 Each event lists creatures per region in `Spawns` -> `Regions`: `SpawnLike:<native creature>` spawns where that

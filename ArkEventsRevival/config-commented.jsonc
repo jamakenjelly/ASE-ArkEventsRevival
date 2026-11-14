@@ -10,14 +10,13 @@
 //   Love Evolved        (vday)               Feb 10    Feb 17   Feb 9
 //   Eggcellent Adventure(easter)             Apr 4     Apr 24   Apr 3
 //   ARK's Anniversary   (birthday)           Jun 2     Jun 6    Jun 1
-//   ARKaeology          (ARKaeology)         Jun 15    Jul 17   Jun 14
+//   ARKaeology          (ARKaeology)         Jun 15    Jun 30   Jun 14
 //   Summer Bash         (Summer)             Jul 1     Jul 26   Jun 30
 //   Fear Evolved        (FearEvolved)        Oct 19    Nov 2    Oct 18
 //   Turkey Trial        (TurkeyTrial)        Nov 22    Dec 7    Nov 21
-//   Winter Wonderland   (WinterWonderland)   Dec 14    Jan 5    Dec 13
+//   Winter Wonderland   (WinterWonderland)   Dec 14    Dec 30   Dec 13
 //
-// Where two overlap, the SHORTER one runs: New Year's (Dec 31 - Jan 1) inside
-// Winter Wonderland, and Summer Bash takes over from ARKaeology on Jul 1.
+// No two events overlap: Winter Wonderland ends Dec 30 (New Year's is Dec 31 - Jan 1) and ARKaeology ends Jun 30 (Summer Bash starts Jul 1).
 // "-event=<token>" on the startup line overrides these until it is removed.
 //
 // Each map has its OWN complete config file, named after the map:
