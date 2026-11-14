@@ -49,10 +49,6 @@ the day before it ends ("ends tomorrow") and the day after it ends. If an event 
 "ends tomorrow" post reminds admins to remove it within 24 hours (or leave it to keep the event going), and the
 "ended" post is sent once the argument has been removed.
 
-**Clock check.** Once an hour the plugin compares the server's date with the real time (fetched over HTTPS from
-worldtimeapi.org). If the server clock is more than 6 hours out, calendar starts and Discord notices are paused and an
-error is logged until the clock is fixed. If the time service cannot be reached the clock is trusted.
-
 **Wild event creatures.** They spawn alongside the game's own wildlife: every creature the game's spawn zones spawn
 has a chance (`GameWeight`, 0.25 by default) of bringing one event creature, put right beside it, until the entry's
 `MaxCount` are alive. So they appear wherever the normal wildlife of that kind lives, spread over the whole map.
