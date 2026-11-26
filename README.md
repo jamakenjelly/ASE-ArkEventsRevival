@@ -13,16 +13,30 @@ Anniversary and New Year's - with event creatures, bosses, drops and Discord ann
 ![Discord announcements the day before an event and when it starts](screenshots/discord-announcements.png)
 
 ## Install
-1. Download the zip from [Releases](../../releases) (or take the [`ArkEventsRevival`](ArkEventsRevival) folder) and copy that folder into your server's `ShooterGame/Binaries/Win64/ArkApi/Plugins/`.
+1. Copy the files in the [`release`](release) folder into your server's `ShooterGame/Binaries/Win64/ArkApi/Plugins/ArkEventsRevival/` folder (create it if needed). The DLL and all `config_<Map>.json` files go in that folder.
 2. Each map has its own config: `config_<Map>.json` (`config_TheIsland.json`, `config_Gen2.json`, ...).
    The plugin works out which map it is on at start-up and loads the matching file, so one folder can be
    copied to every server in a cluster.
-3. To post events to Discord, put your own webhook URL in each config under `Discord` -> `WebhookUrl`.
+3. To post events to Discord, put your own webhook URL under `Discord` -> `WebhookUrl` in `config_TheIsland.json` only. That is the one map with Discord switched on (`Discord` -> `Enabled`), so one server posts each notice once.
    **The webhook URLs in this repo are blank on purpose.**
 4. Start the server, or run `plugins.load ArkEventsRevival` in the console.
 
+## Build from source
+The code is in the [`source`](source) folder, and [`source/ArkEventsRevival-source.zip`](source/ArkEventsRevival-source.zip) holds the same files.
+
+1. Get the ARK Server API 3.56 (ArkApi) source. The plugin includes its headers and links `ArkApi.lib`.
+2. Set the `ARK_API_ROOT` environment variable to that folder, or pass `-p:ArkApiRoot=<folder>` to MSBuild. The folder must contain `versionCorePublicAPIARKArk.h`; the build stops with a message if it doesn't.
+3. Open `sourceArkEventsRevival.vcxproj` in Visual Studio, or build it from a command prompt:
+   ```
+   msbuild ArkEventsRevival.vcxproj -p:Configuration=Release -p:Platform=x64
+   ```
+   The DLL is written to `sourceuildout`.
+4. Copy the DLL into the plugin folder with the files from `release`.
+
+The event config generator is `source/tools/gen_events_config.js`. Its webhook is the placeholder `YOUR_ID/YOUR_TOKEN`, so set your own before using it.
+
 ## Configuring
-[`config-commented.jsonc`](release/config-commented.jsonc) explains every setting (it is documentation only; the plugin reads the
+[`release/config-commented.jsonc`](release/config-commented.jsonc) explains every setting (it is documentation only; the plugin reads the
 `config_<Map>.json` files). Creatures, bosses, levels, crate loot and spawn regions are all editable per map and
 per event, and a mod map can be added by copying an existing file and renaming it to the map's name.
 
