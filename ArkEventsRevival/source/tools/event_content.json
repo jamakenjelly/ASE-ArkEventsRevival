@@ -1,0 +1,1740 @@
+{
+ "FearEvolved": {
+  "c": [
+   [
+    "DodoRex",
+    "/Game/PrimalEarth/Dinos/DodoRex/DodoRex_Character_BP.DodoRex_Character_BP"
+   ],
+   [
+    "Zomdodo",
+    "/Game/PrimalEarth/Dinos/Dodo/ZombieDodo_Character_BP.ZombieDodo_Character_BP"
+   ],
+   [
+    "Onyc",
+    "/Game/PrimalEarth/Dinos/Bat/Bat_Character_BP.Bat_Character_BP"
+   ],
+   [
+    "Araneo",
+    "/Game/PrimalEarth/Dinos/Spider-Small/SpiderS_Character_BP.SpiderS_Character_BP"
+   ],
+   [
+    "Dodo Wyvern",
+    "/Game/ScorchedEarth/Dinos/DodoWyvern/DodoWyvern_Character_BP.DodoWyvern_Character_BP"
+   ],
+   [
+    "Bone Fire Wyvern",
+    "/Game/ScorchedEarth/Dinos/Wyvern/Bone_MegaWyvern_Character_BP_Fire.Bone_MegaWyvern_Character_BP_Fire"
+   ],
+   [
+    "Skeletal Giganotosaurus",
+    "/Game/PrimalEarth/Dinos/Giganotosaurus/Bone_Gigant_Character_BP.Bone_Gigant_Character_BP"
+   ],
+   [
+    "Skeletal Jerboa",
+    "/Game/ScorchedEarth/Dinos/Jerboa/Bone_Jerboa_Character_BP.Bone_Jerboa_Character_BP"
+   ],
+   [
+    "Skeletal Quetzal",
+    "/Game/PrimalEarth/Dinos/Quetzalcoatlus/Bone_Quetz_Character_BP.Bone_Quetz_Character_BP"
+   ],
+   [
+    "Zombie Fire Wyvern",
+    "/Game/ScorchedEarth/Dinos/Wyvern/Wyvern_Character_BP_ZombieFire.Wyvern_Character_BP_ZombieFire"
+   ],
+   [
+    "Zombie Lightning Wyvern",
+    "/Game/ScorchedEarth/Dinos/Wyvern/Wyvern_Character_BP_ZombieLightning.Wyvern_Character_BP_ZombieLightning"
+   ],
+   [
+    "Zombie Poison Wyvern",
+    "/Game/ScorchedEarth/Dinos/Wyvern/Wyvern_Character_BP_ZombiePoison.Wyvern_Character_BP_ZombiePoison"
+   ],
+   [
+    "Skeletal Bronto",
+    "/Game/PrimalEarth/Dinos/Sauropod/Bone_Sauropod_Character_BP.Bone_Sauropod_Character_BP"
+   ],
+   [
+    "Skeletal Carnotaurus",
+    "/Game/PrimalEarth/Dinos/Carno/Bone_MegaCarno_Character_BP.Bone_MegaCarno_Character_BP"
+   ],
+   [
+    "Skeletal Raptor",
+    "/Game/PrimalEarth/Dinos/Raptor/Bone_MegaRaptor_Character_BP.Bone_MegaRaptor_Character_BP"
+   ],
+   [
+    "Skeletal Rex",
+    "/Game/PrimalEarth/Dinos/Rex/Bone_MegaRex_Character_BP.Bone_MegaRex_Character_BP"
+   ],
+   [
+    "Skeletal Stego",
+    "/Game/PrimalEarth/Dinos/Stego/Bone_Stego_Character_BP.Bone_Stego_Character_BP"
+   ],
+   [
+    "Skeletal Trike",
+    "/Game/PrimalEarth/Dinos/Trike/Bone_Trike_Character_BP.Bone_Trike_Character_BP"
+   ],
+   [
+    "Basilisk Ghost",
+    "/Game/Aberration/Dinos/Basilisk/Ghost_Basilisk_Character_BP.Ghost_Basilisk_Character_BP"
+   ],
+   [
+    "Bulbdog Ghost",
+    "/Game/Aberration/Dinos/LanternPug/Ghost_LanternPug_Character_BP.Ghost_LanternPug_Character_BP"
+   ],
+   [
+    "Direwolf Ghost",
+    "/Game/PrimalEarth/Dinos/Direwolf/Ghost_Direwolf_Character_BP.Ghost_Direwolf_Character_BP"
+   ],
+   [
+    "Mantis Ghost",
+    "/Game/ScorchedEarth/Dinos/Mantis/Ghost_Mantis_Character_BP.Ghost_Mantis_Character_BP"
+   ],
+   [
+    "Rex Ghost",
+    "/Game/PrimalEarth/Dinos/Rex/Ghost_Rex_Character_BP.Ghost_Rex_Character_BP"
+   ],
+   [
+    "Snow Owl Ghost",
+    "/Game/Extinction/Dinos/Owl/Ghost_Owl_Character_BP.Ghost_Owl_Character_BP"
+   ],
+   [
+    "Surface Reaper King Ghost",
+    "/Game/Aberration/Dinos/Nameless/Ghost_Xenomorph_Character_BP_Male_Surface.Ghost_Xenomorph_Character_BP_Male_Surface"
+   ]
+  ],
+  "i": [
+   [
+    "Bronto Bone Costume",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Saddles/PrimalItemCostume_BoneSauro.PrimalItemCostume_BoneSauro"
+   ],
+   [
+    "Carno Bone Costume",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Saddles/PrimalItemCostume_BoneCarno.PrimalItemCostume_BoneCarno"
+   ],
+   [
+    "Dino Witch Hat Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Leather/PrimalItemSkin_DinoWitchHat.PrimalItemSkin_DinoWitchHat"
+   ],
+   [
+    "DodoRex Mask Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_DodorexMask.PrimalItemSkin_DodorexMask"
+   ],
+   [
+    "Pumpkin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Structures/Halloween/PrimalItemStructure_Pumpkin.PrimalItemStructure_Pumpkin"
+   ],
+   [
+    "Raptor Bone Costume",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Saddles/PrimalItemCostume_BoneRaptor.PrimalItemCostume_BoneRaptor"
+   ],
+   [
+    "Rex Bone Costume",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Saddles/PrimalItemCostume_BoneRex.PrimalItemCostume_BoneRex"
+   ],
+   [
+    "Scarecrow",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Structures/Halloween/PrimalItemStructure_Scarecrow.PrimalItemStructure_Scarecrow"
+   ],
+   [
+    "Stego Bone Costume",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Saddles/PrimalItemCostume_BoneStego.PrimalItemCostume_BoneStego"
+   ],
+   [
+    "Stolen Headstone",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Structures/Halloween/PrimalItemStructure_HW_Grave.PrimalItemStructure_HW_Grave"
+   ],
+   [
+    "Trike Bone Costume",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Saddles/PrimalItemCostume_BoneTrike.PrimalItemCostume_BoneTrike"
+   ],
+   [
+    "Witch Hat Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_WitchHat.PrimalItemSkin_WitchHat"
+   ],
+   [
+    "DodoWyvern Mask Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_DodowyvernHat.PrimalItemSkin_DodowyvernHat"
+   ],
+   [
+    "Clown Mask Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_ClownMask.PrimalItemSkin_ClownMask"
+   ],
+   [
+    "Giganotosaurus Bone Costume",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Saddles/PrimalItemCostume_BoneGigant.PrimalItemCostume_BoneGigant"
+   ],
+   [
+    "Jerboa Bone Costume",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Saddles/PrimalItemCostume_BoneJerboa.PrimalItemCostume_BoneJerboa"
+   ],
+   [
+    "Quetzalcoatlus Bone Costume",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Saddles/PrimalItemCostume_BoneQuetz.PrimalItemCostume_BoneQuetz"
+   ],
+   [
+    "Vampire Eyes Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_VampireEyes.PrimalItemSkin_VampireEyes"
+   ],
+   [
+    "Werewolf Mask Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_WerewolfHat.PrimalItemSkin_WerewolfHat"
+   ],
+   [
+    "Wyvern Bone Costume",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Saddles/PrimalItemCostume_BoneWyvern.PrimalItemCostume_BoneWyvern"
+   ],
+   [
+    "Araneo Swim Bottom Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_FE_Underwear_Araneo.PrimalItemSkin_FE_Underwear_Araneo"
+   ],
+   [
+    "Araneo Swim Top Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_FE_SwimShirt_Araneo.PrimalItemSkin_FE_SwimShirt_Araneo"
+   ],
+   [
+    "Dance Emote",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Consumables/BaseBPs/PrimalItemConsumable_UnlockEmote_Dance.PrimalItemConsumable_UnlockEmote_Dance"
+   ],
+   [
+    "Dino Candy Corn",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Consumables/PrimalItemConsumable_FE_Crafted_CandyCorn.PrimalItemConsumable_FE_Crafted_CandyCorn"
+   ],
+   [
+    "Dinosaur Bone",
+    "/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_ARKBone.PrimalItemResource_ARKBone"
+   ],
+   [
+    "Headless Costume Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_FE_HeadlessHat.PrimalItemSkin_FE_HeadlessHat"
+   ],
+   [
+    "Hockey Mask Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_FE_ScaryFaceMask.PrimalItemSkin_FE_ScaryFaceMask"
+   ],
+   [
+    "Onyc Swim Bottom Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_FE_Underwear_Onyc.PrimalItemSkin_FE_Underwear_Onyc"
+   ],
+   [
+    "Onyc Swim Top Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_FE_SwimShirt_Onyc.PrimalItemSkin_FE_SwimShirt_Onyc"
+   ],
+   [
+    "Panic Emote",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Consumables/BaseBPs/PrimalItemConsumable_UnlockEmote_Panic.PrimalItemConsumable_UnlockEmote_Panic"
+   ],
+   [
+    "Scary Pumpkin Helmet Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_FE_PumpkinHat.PrimalItemSkin_FE_PumpkinHat"
+   ],
+   [
+    "Vampire Dodo Swim Bottom Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_FE_Underwear_VampireDodo.PrimalItemSkin_FE_Underwear_VampireDodo"
+   ],
+   [
+    "Vampire Dodo Swim Top Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_FE_SwimShirt_VampireDodo.PrimalItemSkin_FE_SwimShirt_VampireDodo"
+   ],
+   [
+    "Zombie Emote",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Consumables/BaseBPs/PrimalItemConsumable_UnlockEmote_Zombie.PrimalItemConsumable_UnlockEmote_Zombie"
+   ],
+   [
+    "Basilisk Ghost Costume",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Saddles/PrimalItemCostume_GhostBasilisk.PrimalItemCostume_GhostBasilisk"
+   ],
+   [
+    "Bulbdog Ghost Costume",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Saddles/PrimalItemCostume_GhostLanternPug.PrimalItemCostume_GhostLanternPug"
+   ],
+   [
+    "Direwolf Ghost Costume",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Saddles/PrimalItemCostume_GhostDirewolf.PrimalItemCostume_GhostDirewolf"
+   ],
+   [
+    "Jack-O-Lantern Swim Bottom Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_FE_Underwear_Pumpkin.PrimalItemSkin_FE_Underwear_Pumpkin"
+   ],
+   [
+    "Jack-O-Lantern Swim Top Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_FE_SwimShirt_Pumpkin.PrimalItemSkin_FE_SwimShirt_Pumpkin"
+   ],
+   [
+    "Jack-O-Lantern-Print Shirt Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_HawaiianShirt_Pumpkin.PrimalItemSkin_HawaiianShirt_Pumpkin"
+   ],
+   [
+    "Knock Emote",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Consumables/BaseBPs/PrimalItemConsumable_UnlockEmote_FEKnock.PrimalItemConsumable_UnlockEmote_FEKnock"
+   ],
+   [
+    "Mantis Ghost Costume",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Saddles/PrimalItemCostume_GhostMantis.PrimalItemCostume_GhostMantis"
+   ],
+   [
+    "Reaper Ghost Costume",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Saddles/PrimalItemCostume_GhostReaper.PrimalItemCostume_GhostReaper"
+   ],
+   [
+    "Reaper Swim Bottom Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_FE_Underwear_Reaper.PrimalItemSkin_FE_Underwear_Reaper"
+   ],
+   [
+    "Reaper Swim Top Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_FE_SwimShirt_Reaper.PrimalItemSkin_FE_SwimShirt_Reaper"
+   ],
+   [
+    "Reaper-Print Shirt Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_HawaiianShirt_Reaper.PrimalItemSkin_HawaiianShirt_Reaper"
+   ],
+   [
+    "Rex Ghost Costume",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Saddles/PrimalItemCostume_GhostRex.PrimalItemCostume_GhostRex"
+   ],
+   [
+    "Scare Emote",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Consumables/BaseBPs/PrimalItemConsumable_UnlockEmote_FEScare.PrimalItemConsumable_UnlockEmote_FEScare"
+   ],
+   [
+    "Snow Owl Ghost Costume",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Saddles/PrimalItemCostume_GhostOwl.PrimalItemCostume_GhostOwl"
+   ],
+   [
+    "Chibi-Skeletal Brontosaurus",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Bronto_Bone.PrimalItemSkin_ChibiDino_Bronto_Bone"
+   ],
+   [
+    "Chibi-Skeletal Carno",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Carnotaurus_Bone.PrimalItemSkin_ChibiDino_Carnotaurus_Bone"
+   ],
+   [
+    "Chibi-Skeletal Giganotosaurus",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Gigant_Bone.PrimalItemSkin_ChibiDino_Gigant_Bone"
+   ],
+   [
+    "Chibi-Skeletal Jerboa",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Jerboa_Bone.PrimalItemSkin_ChibiDino_Jerboa_Bone"
+   ],
+   [
+    "Chibi-Skeletal Quetzal",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Quetzal_Bone.PrimalItemSkin_ChibiDino_Quetzal_Bone"
+   ],
+   [
+    "Chibi-Skeletal Raptor",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Raptor_Bone.PrimalItemSkin_ChibiDino_Raptor_Bone"
+   ],
+   [
+    "Chibi-Skeletal Rex",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Rex_Bone.PrimalItemSkin_ChibiDino_Rex_Bone"
+   ],
+   [
+    "Chibi-Skeletal Stego",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Stego_Bone.PrimalItemSkin_ChibiDino_Stego_Bone"
+   ],
+   [
+    "Chibi-Skeletal Trike",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Trike_Bone.PrimalItemSkin_ChibiDino_Trike_Bone"
+   ],
+   [
+    "Chibi-Skeletal Wyvern",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Wyvern_Bone.PrimalItemSkin_ChibiDino_Wyvern_Bone"
+   ],
+   [
+    "Chibi-Zombie Wyvern",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Wyvern_Zombie.PrimalItemSkin_ChibiDino_Wyvern_Zombie"
+   ],
+   [
+    "Scary Dino Pumpkin Helmet Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_FE_PumpkinHat_Dino.PrimalItemSkin_FE_PumpkinHat_Dino"
+   ],
+   [
+    "Skeleton Costume Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_Costume_Skeleton.PrimalItemSkin_Costume_Skeleton"
+   ],
+   [
+    "Skelly-Print Shirt Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_HawaiianShirt_Skellies.PrimalItemSkin_HawaiianShirt_Skellies"
+   ],
+   [
+    "Strawman Costume Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_Costume_Strawman.PrimalItemSkin_Costume_Strawman"
+   ],
+   [
+    "Tentacle-Print Shirt Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_HawaiianShirt_Tentacles.PrimalItemSkin_HawaiianShirt_Tentacles"
+   ],
+   [
+    "ZombDodo-Print Shirt Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_HawaiianShirt_DodoZombies.PrimalItemSkin_HawaiianShirt_DodoZombies"
+   ],
+   [
+    "Zombie Wyvern-Print Shirt Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_HawaiianShirt_ZombieWyvern.PrimalItemSkin_HawaiianShirt_ZombieWyvern"
+   ],
+   [
+    "Chibi-Ghost Basilisk",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_BasiliskGhost.PrimalItemSkin_ChibiDino_BasiliskGhost"
+   ],
+   [
+    "Chibi-Ghost Direwolf",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_DirewolfGhost.PrimalItemSkin_ChibiDino_DirewolfGhost"
+   ],
+   [
+    "Chibi-Ghost Mantis",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_MantisGhost.PrimalItemSkin_ChibiDino_MantisGhost"
+   ],
+   [
+    "Chibi-Ghost Rex",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_RexGhost.PrimalItemSkin_ChibiDino_RexGhost"
+   ],
+   [
+    "Chibi-The Witching Owl",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_WitchingOwl.PrimalItemSkin_ChibiDino_WitchingOwl"
+   ],
+   [
+    "Chibi-Anglerfish",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Anglerfish.PrimalItemSkin_ChibiDino_Anglerfish"
+   ],
+   [
+    "Chibi-Araneo",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Araneo.PrimalItemSkin_ChibiDino_Araneo"
+   ],
+   [
+    "Chibi-Desmodus",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Desmodus.PrimalItemSkin_ChibiDino_Desmodus"
+   ],
+   [
+    "Chibi-Spooky Bulbdog",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Bulbdog_Pumpkin.PrimalItemSkin_ChibiDino_Bulbdog_Pumpkin"
+   ],
+   [
+    "Chibi-Vulture",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Vulture.PrimalItemSkin_ChibiDino_Vulture"
+   ]
+  ]
+ },
+ "TurkeyTrial": {
+  "c": [
+   [
+    "Turkey",
+    "/Game/PrimalEarth/Dinos/Dodo/TurkeyBase_Character_BP.TurkeyBase_Character_BP"
+   ],
+   [
+    "DodoRex",
+    "/Game/PrimalEarth/Dinos/DodoRex/DodoRex_Character_BP.DodoRex_Character_BP"
+   ],
+   [
+    "Super Turkey",
+    "/Game/PrimalEarth/Dinos/Dodo/Turkey_Character_BP.Turkey_Character_BP"
+   ]
+  ],
+  "i": [
+   [
+    "Wishbone",
+    "/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Wishbone.PrimalItemResource_Wishbone"
+   ],
+   [
+    "Chieftan Hat Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_TurkeyHat.PrimalItemSkin_TurkeyHat"
+   ],
+   [
+    "Belly Rub Emote",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Consumables/BaseBPs/PrimalItemConsumable_UnlockEmote_BellyRub.PrimalItemConsumable_UnlockEmote_BellyRub"
+   ],
+   [
+    "Bonnet Hat Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_TT_BonnetHat.PrimalItemSkin_TT_BonnetHat"
+   ],
+   [
+    "Dodo Pie Swim Bottom Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_TT_SwimPants_DodoPie.PrimalItemSkin_TT_SwimPants_DodoPie"
+   ],
+   [
+    "Dodo Pie Swim Top Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_TT_SwimShirt_DodoPie.PrimalItemSkin_TT_SwimShirt_DodoPie"
+   ],
+   [
+    "Food Coma Emote",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Consumables/BaseBPs/PrimalItemConsumable_UnlockEmote_FoodComa.PrimalItemConsumable_UnlockEmote_FoodComa"
+   ],
+   [
+    "Hungry Emote",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Consumables/BaseBPs/PrimalItemConsumable_UnlockEmote_Hungry.PrimalItemConsumable_UnlockEmote_Hungry"
+   ],
+   [
+    "Meat Swim Bottom Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_TT_SwimPants_Meat.PrimalItemSkin_TT_SwimPants_Meat"
+   ],
+   [
+    "Meat Swim Top Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_TT_SwimShirt_Meat.PrimalItemSkin_TT_SwimShirt_Meat"
+   ],
+   [
+    "Pilgrim Hat Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_TT_PilgrimHat.PrimalItemSkin_TT_PilgrimHat"
+   ],
+   [
+    "Pitchfork Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_TT_Pike_Pitchfork.PrimalItemSkin_TT_Pike_Pitchfork"
+   ],
+   [
+    "Summon DodoRex",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Cloth/PrimalItem_DodoRexTribute.PrimalItem_DodoRexTribute"
+   ],
+   [
+    "Thanksgiving Candy",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Consumables/PrimalItemConsumable_TT_Crafted_ThanksgivingCandy.PrimalItemConsumable_TT_Crafted_ThanksgivingCandy"
+   ],
+   [
+    "Turkey Hat Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_TT_ActualTurkeyHat.PrimalItemSkin_TT_ActualTurkeyHat"
+   ],
+   [
+    "Turkey Leg Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_TT_Club_TurkeyLeg.PrimalItemSkin_TT_Club_TurkeyLeg"
+   ],
+   [
+    "Turkey Swim Bottom Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_TT_SwimPants_TurkeyBerry.PrimalItemSkin_TT_SwimPants_TurkeyBerry"
+   ],
+   [
+    "Turkey Swim Top Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_TT_SwimShirt_TurkeyBerry.PrimalItemSkin_TT_SwimShirt_TurkeyBerry"
+   ],
+   [
+    "Dodorex Swim Bottom Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_SwimPants_Dodo.PrimalItemSkin_SwimPants_Dodo"
+   ],
+   [
+    "Dodorex Swim Top Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_SwimShirt_Dodo.PrimalItemSkin_SwimShirt_Dodo"
+   ],
+   [
+    "Dodorex-Print Shirt Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_HawaiianShirt_Dodo.PrimalItemSkin_HawaiianShirt_Dodo"
+   ],
+   [
+    "Murder Turkey Swim Bottom Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_SwimPants_MurderTurkey.PrimalItemSkin_SwimPants_MurderTurkey"
+   ],
+   [
+    "Murder Turkey Swim Top Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_SwimShirt_MurderTurkey.PrimalItemSkin_SwimShirt_MurderTurkey"
+   ],
+   [
+    "Murder-Turkey-Print Shirt Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_HawaiianShirt_MurderTurkey.PrimalItemSkin_HawaiianShirt_MurderTurkey"
+   ],
+   [
+    "Ugly Cornucopia Sweater Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_Sweater_Cornucopia.PrimalItemSkin_Sweater_Cornucopia"
+   ],
+   [
+    "Ugly Trike Sweater Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_Sweater_Trike.PrimalItemSkin_Sweater_Trike"
+   ],
+   [
+    "Chibi-Bonnet Otter",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_OtterBonnet.PrimalItemSkin_ChibiDino_OtterBonnet"
+   ],
+   [
+    "Chibi-Broodmother",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_BroodMother.PrimalItemSkin_ChibiDino_BroodMother"
+   ],
+   [
+    "Chibi-Dunkleosteus",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Dunkleo.PrimalItemSkin_ChibiDino_Dunkleo"
+   ],
+   [
+    "Chibi-Mantis",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Mantis.PrimalItemSkin_ChibiDino_Mantis"
+   ],
+   [
+    "Chibi-Tusoteuthis",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Tuso.PrimalItemSkin_ChibiDino_Tuso"
+   ],
+   [
+    "Turkey Costume Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_Costume_Turkey.PrimalItemSkin_Costume_Turkey"
+   ],
+   [
+    "Ugly Dodo's Revenge Sweater Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_Sweater_DodosRevenge.PrimalItemSkin_Sweater_DodosRevenge"
+   ],
+   [
+    "Ugly Foliage Friends Sweater Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_Sweater_FallFun.PrimalItemSkin_Sweater_FallFun"
+   ],
+   [
+    "Ugly Turkey Target Sweater Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_Sweater_TheHunted.PrimalItemSkin_Sweater_TheHunted"
+   ],
+   [
+    "Chibi-Deinonychus",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Deinonychus.PrimalItemSkin_ChibiDino_Deinonychus"
+   ],
+   [
+    "Chibi-Gigantopithecus Chieftan",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_GigantopithecusChieftan.PrimalItemSkin_ChibiDino_GigantopithecusChieftan"
+   ],
+   [
+    "Chibi-Kaprosuchus",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Kaprosuchus.PrimalItemSkin_ChibiDino_Kaprosuchus"
+   ],
+   [
+    "Chibi-Onyc",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Onyc.PrimalItemSkin_ChibiDino_Onyc"
+   ],
+   [
+    "Chibi-TEK Raptor",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_TEKRaptor.PrimalItemSkin_ChibiDino_TEKRaptor"
+   ],
+   [
+    "Chibi-Fjordhawk",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Fjordhawk.PrimalItemSkin_ChibiDino_Fjordhawk"
+   ],
+   [
+    "Chibi-Lymantria",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Lymantria.PrimalItemSkin_ChibiDino_Lymantria"
+   ],
+   [
+    "Chibi-Mosasaurus",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Mosa.PrimalItemSkin_ChibiDino_Mosa"
+   ],
+   [
+    "Chibi-Stuffed Glowtail",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_GlowtailStuffed.PrimalItemSkin_ChibiDino_GlowtailStuffed"
+   ],
+   [
+    "Chibi-Tek Stryder",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_TekStryder.PrimalItemSkin_ChibiDino_TekStryder"
+   ]
+  ]
+ },
+ "WinterWonderland": {
+  "c": [
+   [
+    "DodoRex",
+    "/Game/PrimalEarth/Dinos/DodoRex/DodoRex_Character_BP.DodoRex_Character_BP"
+   ],
+   [
+    "GachaClaus",
+    "/Game/Extinction/Dinos/Gacha/Gacha_Claus_Character_BP.Gacha_Claus_Character_BP"
+   ]
+  ],
+  "i": [
+   [
+    "Mistletoe",
+    "/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_MistleToe.PrimalItemResource_MistleToe"
+   ],
+   [
+    "Coal",
+    "/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Coal.PrimalItemResource_Coal"
+   ],
+   [
+    "Candy Cane Club Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Leather/PrimalItemSkin_CandyClub.PrimalItemSkin_CandyClub"
+   ],
+   [
+    "Dino Santa Hat Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_DinoSantaHat.PrimalItemSkin_DinoSantaHat"
+   ],
+   [
+    "Gift Box",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Structures/Christmas/PrimalItemStructure_StorageBox_ChristmasGift.PrimalItemStructure_StorageBox_ChristmasGift"
+   ],
+   [
+    "Holiday Lights",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Structures/Christmas/PrimalItemStructure_XmasLights.PrimalItemStructure_XmasLights"
+   ],
+   [
+    "Holiday Stocking",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Structures/Christmas/PrimalItemStructure_Stocking.PrimalItemStructure_Stocking"
+   ],
+   [
+    "Holiday Tree",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Structures/Christmas/PrimalItemStructure_ChristmasTree.PrimalItemStructure_ChristmasTree"
+   ],
+   [
+    "Megaloceros Reindeer Costume",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Saddles/PrimalItemCostume_ReindeerStag.PrimalItemCostume_ReindeerStag"
+   ],
+   [
+    "Santa Hat Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_SantaHat.PrimalItemSkin_SantaHat"
+   ],
+   [
+    "Snowman",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Structures/Christmas/PrimalItemStructure_Snowman.PrimalItemStructure_Snowman"
+   ],
+   [
+    "Wreath",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Structures/Christmas/PrimalItemStructure_Wreath.PrimalItemStructure_Wreath"
+   ],
+   [
+    "Snowball Emote",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Consumables/BaseBPs/PrimalItemConsumable_UnlockEmote_Snowball.PrimalItemConsumable_UnlockEmote_Snowball"
+   ],
+   [
+    "Festive Dino Candy",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Consumables/PrimalItemConsumable_FestiveDinoCandy.PrimalItemConsumable_FestiveDinoCandy"
+   ],
+   [
+    "Caroling Emote",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Consumables/BaseBPs/PrimalItemConsumable_UnlockEmote_Caroling.PrimalItemConsumable_UnlockEmote_Caroling"
+   ],
+   [
+    "Christmas Bola Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_WW_Xmas_Bola.PrimalItemSkin_WW_Xmas_Bola"
+   ],
+   [
+    "Dino Ornament Swim Bottom Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_WW_Underwear_DinoOrnaments.PrimalItemSkin_WW_Underwear_DinoOrnaments"
+   ],
+   [
+    "Dino Ornament Swim Top Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_WW_SwimShirt_DinoOrnaments.PrimalItemSkin_WW_SwimShirt_DinoOrnaments"
+   ],
+   [
+    "Felt Reindeer Antlers Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_WW_ReindeerAntlersHat.PrimalItemSkin_WW_ReindeerAntlersHat"
+   ],
+   [
+    "Gray-Ball Winter Beanie Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_WW_WinterHatB.PrimalItemSkin_WW_WinterHatB"
+   ],
+   [
+    "Happy Clap Emote",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Consumables/BaseBPs/PrimalItemConsumable_UnlockEmote_HappyClap.PrimalItemConsumable_UnlockEmote_HappyClap"
+   ],
+   [
+    "Jerboa Wreath Swim Bottom Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_WW_Underwear_JerboaWreath.PrimalItemSkin_WW_Underwear_JerboaWreath"
+   ],
+   [
+    "Jerboa Wreath Swim Top Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_WW_SwimShirt_JerboaWreath.PrimalItemSkin_WW_SwimShirt_JerboaWreath"
+   ],
+   [
+    "Nutcracker Dance Emote",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Consumables/BaseBPs/PrimalItemConsumable_UnlockEmote_NutcrackerDance.PrimalItemConsumable_UnlockEmote_NutcrackerDance"
+   ],
+   [
+    "Nutcracker Slingshot Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Leather/PrimalItemSkin_WW_Nutcracker_Slingshot.PrimalItemSkin_WW_Nutcracker_Slingshot"
+   ],
+   [
+    "Purple-Ball Winter Beanie Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Leather/PrimalItemSkin_WW_WinterHatC.PrimalItemSkin_WW_WinterHatC"
+   ],
+   [
+    "Red-Ball Winter Beanie Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Leather/PrimalItemSkin_WW_WinterHatA.PrimalItemSkin_WW_WinterHatA"
+   ],
+   [
+    "Ugly Bronto Sweater Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_WW_XmasSweaterBronto.PrimalItemSkin_WW_XmasSweaterBronto"
+   ],
+   [
+    "Ugly Carno Sweater Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_WW_XmasSweaterCarno.PrimalItemSkin_WW_XmasSweaterCarno"
+   ],
+   [
+    "Ugly Chibi Sweater Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_WW_XmasSweaterChibi.PrimalItemSkin_WW_XmasSweaterChibi"
+   ],
+   [
+    "Chibi-Allosaurus",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Allosaurus.PrimalItemSkin_ChibiDino_Allosaurus"
+   ],
+   [
+    "Chibi-Ankylosaurus",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Ankylosaurus.PrimalItemSkin_ChibiDino_Ankylosaurus"
+   ],
+   [
+    "Chibi-Argentavis",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Argent.PrimalItemSkin_ChibiDino_Argent"
+   ],
+   [
+    "Chibi-Baryonyx",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Baryonyx.PrimalItemSkin_ChibiDino_Baryonyx"
+   ],
+   [
+    "Chibi-Bloodstalker",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_BogSpider.PrimalItemSkin_ChibiDino_BogSpider"
+   ],
+   [
+    "Chibi-Brontosaurus",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Bronto.PrimalItemSkin_ChibiDino_Bronto"
+   ],
+   [
+    "Chibi-Carbonemys",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Carbonemys.PrimalItemSkin_ChibiDino_Carbonemys"
+   ],
+   [
+    "Chibi-Carno",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Carnotaurus.PrimalItemSkin_ChibiDino_Carnotaurus"
+   ],
+   [
+    "Chibi-Castroides",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Castroides.PrimalItemSkin_ChibiDino_Castroides"
+   ],
+   [
+    "Chibi-Daeodon",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Daeodon.PrimalItemSkin_ChibiDino_Daeodon"
+   ],
+   [
+    "Chibi-Direwolf",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Direwolf.PrimalItemSkin_ChibiDino_Direwolf"
+   ],
+   [
+    "Chibi-Doedicurus",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Doedicurus.PrimalItemSkin_ChibiDino_Doedicurus"
+   ],
+   [
+    "Chibi-Equus",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Equus.PrimalItemSkin_ChibiDino_Equus"
+   ],
+   [
+    "Chibi-Ferox (Large)",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Shapeshifter_Large.PrimalItemSkin_ChibiDino_Shapeshifter_Large"
+   ],
+   [
+    "Chibi-Ferox (Small)",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Shapeshifter_Small.PrimalItemSkin_ChibiDino_Shapeshifter_Small"
+   ],
+   [
+    "Chibi-Gasbag",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Gasbag.PrimalItemSkin_ChibiDino_Gasbag"
+   ],
+   [
+    "Chibi-Giganotosaurus",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Gigant.PrimalItemSkin_ChibiDino_Gigant"
+   ],
+   [
+    "Chibi-Gigantopithecus",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Gigantopithecus.PrimalItemSkin_ChibiDino_Gigantopithecus"
+   ],
+   [
+    "Chibi-Iguanodon",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Iguanodon.PrimalItemSkin_ChibiDino_Iguanodon"
+   ],
+   [
+    "Chibi-Kentrosaurus",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Kentrosaurus.PrimalItemSkin_ChibiDino_Kentrosaurus"
+   ],
+   [
+    "Chibi-Magmasaur",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Cherufe.PrimalItemSkin_ChibiDino_Cherufe"
+   ],
+   [
+    "Chibi-Mammoth",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Mammoth.PrimalItemSkin_ChibiDino_Mammoth"
+   ],
+   [
+    "Chibi-Megalania",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Megalania.PrimalItemSkin_ChibiDino_Megalania"
+   ],
+   [
+    "Chibi-Megaloceros",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Megaloceros.PrimalItemSkin_ChibiDino_Megaloceros"
+   ],
+   [
+    "Chibi-Megatherium",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Megatherium.PrimalItemSkin_ChibiDino_Megatherium"
+   ],
+   [
+    "Chibi-Moschops",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Moschops.PrimalItemSkin_ChibiDino_Moschops"
+   ],
+   [
+    "Chibi-Oviraptor",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Oviraptor.PrimalItemSkin_ChibiDino_Oviraptor"
+   ],
+   [
+    "Chibi-Ovis",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Sheep.PrimalItemSkin_ChibiDino_Sheep"
+   ],
+   [
+    "Chibi-Paraceratherium",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Paraceratherium.PrimalItemSkin_ChibiDino_Paraceratherium"
+   ],
+   [
+    "Chibi-Parasaur",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Parasaur.PrimalItemSkin_ChibiDino_Parasaur"
+   ],
+   [
+    "Chibi-Phiomia",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Phiomia.PrimalItemSkin_ChibiDino_Phiomia"
+   ],
+   [
+    "Chibi-Phoenix",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Phoenix.PrimalItemSkin_ChibiDino_Phoenix"
+   ],
+   [
+    "Chibi-Procoptodon",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Procoptodon.PrimalItemSkin_ChibiDino_Procoptodon"
+   ],
+   [
+    "Chibi-Pteranodon",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Pteranodon.PrimalItemSkin_ChibiDino_Pteranodon"
+   ],
+   [
+    "Chibi-Pulmonoscorpius",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Pulmonoscorpius.PrimalItemSkin_ChibiDino_Pulmonoscorpius"
+   ],
+   [
+    "Chibi-Quetzal",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Quetzal.PrimalItemSkin_ChibiDino_Quetzal"
+   ],
+   [
+    "Chibi-Raptor",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Raptor.PrimalItemSkin_ChibiDino_Raptor"
+   ],
+   [
+    "Chibi-Reaper",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Reaper.PrimalItemSkin_ChibiDino_Reaper"
+   ],
+   [
+    "Chibi-Rex",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Rex.PrimalItemSkin_ChibiDino_Rex"
+   ],
+   [
+    "Chibi-Rhino",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_WoollyRhino.PrimalItemSkin_ChibiDino_WoollyRhino"
+   ],
+   [
+    "Chibi-Rock Drake",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_RockDrake.PrimalItemSkin_ChibiDino_RockDrake"
+   ],
+   [
+    "Chibi-Rock Golem",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_RockGolem.PrimalItemSkin_ChibiDino_RockGolem"
+   ],
+   [
+    "Chibi-Rollrat",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_MoleRat.PrimalItemSkin_ChibiDino_MoleRat"
+   ],
+   [
+    "Chibi-Sabertooth",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Saber.PrimalItemSkin_ChibiDino_Saber"
+   ],
+   [
+    "Chibi-Snow Owl",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_SnowOwl.PrimalItemSkin_ChibiDino_SnowOwl"
+   ],
+   [
+    "Chibi-Spino",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Spino.PrimalItemSkin_ChibiDino_Spino"
+   ],
+   [
+    "Chibi-Stego",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Stego.PrimalItemSkin_ChibiDino_Stego"
+   ],
+   [
+    "Chibi-Tapejara",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Tapejara.PrimalItemSkin_ChibiDino_Tapejara"
+   ],
+   [
+    "Chibi-Terror Bird",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_TerrorBird.PrimalItemSkin_ChibiDino_TerrorBird"
+   ],
+   [
+    "Chibi-Therizino",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Therizino.PrimalItemSkin_ChibiDino_Therizino"
+   ],
+   [
+    "Chibi-Thylacoleo",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Thylacoleo.PrimalItemSkin_ChibiDino_Thylacoleo"
+   ],
+   [
+    "Chibi-Trike",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Trike.PrimalItemSkin_ChibiDino_Trike"
+   ],
+   [
+    "Chibi-Wyvern",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Wyvern.PrimalItemSkin_ChibiDino_Wyvern"
+   ],
+   [
+    "Chibi-Yutyrannus",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Yutyrannus.PrimalItemSkin_ChibiDino_Yutyrannus"
+   ],
+   [
+    "Blue-Ball Winter Beanie Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_WW_WinterHatD.PrimalItemSkin_WW_WinterHatD"
+   ],
+   [
+    "Green-Ball Winter Beanie Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_WW_WinterHatF.PrimalItemSkin_WW_WinterHatF"
+   ],
+   [
+    "Noglin Swim Bottom Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_WW_Underwear_Noglin.PrimalItemSkin_WW_Underwear_Noglin"
+   ],
+   [
+    "Noglin Swim Top Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_WW_SwimShirt_Noglin.PrimalItemSkin_WW_SwimShirt_Noglin"
+   ],
+   [
+    "Purple-Ball Winter Beanie Skin (Winter Wonderland 5)",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_WW_WinterHatE.PrimalItemSkin_WW_WinterHatE"
+   ],
+   [
+    "Ugly Bulbdog Sweater Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_WW_XmasSweater_Bulbdog.PrimalItemSkin_WW_XmasSweater_Bulbdog"
+   ],
+   [
+    "Ugly Caroling Sweater Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_WW_XmasSweater_Carolers.PrimalItemSkin_WW_XmasSweater_Carolers"
+   ],
+   [
+    "Ugly T-Rex Sweater Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_WW_XmasSweater_Rex.PrimalItemSkin_WW_XmasSweater_Rex"
+   ],
+   [
+    "Yeti Swim Bottom Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_WW_Underwear_Yeti.PrimalItemSkin_WW_Underwear_Yeti"
+   ],
+   [
+    "Yeti Swim Top Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_WW_SwimShirt_Yeti.PrimalItemSkin_WW_SwimShirt_Yeti"
+   ],
+   [
+    "Chibi-Bulbdog",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Bulbdog.PrimalItemSkin_ChibiDino_Bulbdog"
+   ],
+   [
+    "Chibi-Featherlight",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Featherlight.PrimalItemSkin_ChibiDino_Featherlight"
+   ],
+   [
+    "Chibi-Gacha Claus",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_GachaClaus.PrimalItemSkin_ChibiDino_GachaClaus"
+   ],
+   [
+    "Chibi-Glowtail",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Glowtail.PrimalItemSkin_ChibiDino_Glowtail"
+   ],
+   [
+    "Chibi-Reindeer",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Reindeer.PrimalItemSkin_ChibiDino_Reindeer"
+   ],
+   [
+    "Chibi-Shinehorn",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Shinehorn.PrimalItemSkin_ChibiDino_Shinehorn"
+   ],
+   [
+    "Santa Emote",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Consumables/BaseBPs/PrimalItemConsumable_UnlockEmote_Santa.PrimalItemConsumable_UnlockEmote_Santa"
+   ],
+   [
+    "Chibi-Amargasaurus",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Amarga.PrimalItemSkin_ChibiDino_Amarga"
+   ],
+   [
+    "Chibi-Animated Series Raptor",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_RaptorAnimatedSeries.PrimalItemSkin_ChibiDino_RaptorAnimatedSeries"
+   ],
+   [
+    "Chibi-Dinopithecus",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Dinopithecus.PrimalItemSkin_ChibiDino_Dinopithecus"
+   ],
+   [
+    "Chibi-Festive Noglin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_BrainSlugXmas.PrimalItemSkin_ChibiDino_BrainSlugXmas"
+   ],
+   [
+    "Chibi-Sinomacrops",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Sinomacrops.PrimalItemSkin_ChibiDino_Sinomacrops"
+   ],
+   [
+    "Chibi-Andrewsarchus",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Andrewsarchus.PrimalItemSkin_ChibiDino_Andrewsarchus"
+   ],
+   [
+    "Chibi-Diplodocus",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Diplodocus.PrimalItemSkin_ChibiDino_Diplodocus"
+   ],
+   [
+    "Chibi-Fenrir",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Fenrir.PrimalItemSkin_ChibiDino_Fenrir"
+   ],
+   [
+    "Chibi-Pachy",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Pachy.PrimalItemSkin_ChibiDino_Pachy"
+   ]
+  ]
+ },
+ "vday": {
+  "c": [],
+  "i": [
+   [
+    "Box o' Chocolates",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Consumables/Vday/PrimalItemConsumable_ValentinesChocolate.PrimalItemConsumable_ValentinesChocolate"
+   ],
+   [
+    "Heart Emote",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Consumables/BaseBPs/PrimalItemConsumable_UnlockEmote_Heart.PrimalItemConsumable_UnlockEmote_HeartDO"
+   ],
+   [
+    "Valentines Dino Candy",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Consumables/Vday/PrimalItemConsumable_ValentinesDinoCandy.PrimalItemConsumable_ValentinesDinoCandy"
+   ],
+   [
+    "Bow & Eros Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_CupidBow.PrimalItemSkin_CupidBow"
+   ],
+   [
+    "Cupid Couture Bottom Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_ValentinePants.PrimalItemSkin_ValentinePants"
+   ],
+   [
+    "Cupid Couture Top Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_ValentineShirt.PrimalItemSkin_ValentineShirt"
+   ],
+   [
+    "Flirty Emote",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Consumables/BaseBPs/PrimalItemConsumable_UnlockEmote_Flirt.PrimalItemConsumable_UnlockEmote_Flirt"
+   ],
+   [
+    "Halo Headband Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_ValentineHaloHat.PrimalItemSkin_ValentineHaloHat"
+   ],
+   [
+    "Love Shackles Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_Vday_Handcuffs.PrimalItemSkin_Vday_Handcuffs"
+   ],
+   [
+    "Teddy Bear Grenades Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_VDay_Grenade_ValentineBear.PrimalItemSkin_VDay_Grenade_ValentineBear"
+   ],
+   [
+    "Chibi-Direbear",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Direbear.PrimalItemSkin_ChibiDino_Direbear"
+   ],
+   [
+    "Chibi-Griffin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Griffin.PrimalItemSkin_ChibiDino_Griffin"
+   ],
+   [
+    "Chibi-Sarco",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Sarco.PrimalItemSkin_ChibiDino_Sarco"
+   ],
+   [
+    "Chibi-Troodon",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Troodon.PrimalItemSkin_ChibiDino_Troodon"
+   ],
+   [
+    "Pair-o-Saurs Chibi",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Pairosaurs_VDay.PrimalItemSkin_ChibiDino_Pairosaurs_VDay"
+   ],
+   [
+    "Teeny Tiny Titano",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Titano.PrimalItemSkin_ChibiDino_Titano"
+   ],
+   [
+    "Heart-shaped Shield Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_Vday_Shield.PrimalItemSkin_Vday_Shield"
+   ],
+   [
+    "Heart-shaped Sunglasses Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_SunGlasses_Vday.PrimalItemSkin_SunGlasses_Vday"
+   ],
+   [
+    "Chibi-Crystal Wyvern",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_WyvernCrystal.PrimalItemSkin_ChibiDino_WyvernCrystal"
+   ],
+   [
+    "Chibi-Enforcer",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Enforcer.PrimalItemSkin_ChibiDino_Enforcer"
+   ],
+   [
+    "Chibi-Mesopithecus",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Mesopithecus.PrimalItemSkin_ChibiDino_Mesopithecus"
+   ],
+   [
+    "Chibi-Otter",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Otter.PrimalItemSkin_ChibiDino_Otter"
+   ],
+   [
+    "Chibi-Velonasaur",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Velonasaur.PrimalItemSkin_ChibiDino_Velonasaur"
+   ],
+   [
+    "Self Hug Emote",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Consumables/BaseBPs/PrimalItemConsumable_UnlockEmote_SelfHug.PrimalItemConsumable_UnlockEmote_SelfHug"
+   ],
+   [
+    "Chibi-Archaeopteryx",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Archaeopteryx.PrimalItemSkin_ChibiDino_Archaeopteryx"
+   ],
+   [
+    "Chibi-Gallimimus",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Gallimimus.PrimalItemSkin_ChibiDino_Gallimimus"
+   ],
+   [
+    "Chibi-Kairuku",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Kairuku.PrimalItemSkin_ChibiDino_Kairuku"
+   ],
+   [
+    "Chibi-Pelagornis",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Pelagornis.PrimalItemSkin_ChibiDino_Pelagornis"
+   ],
+   [
+    "Chibi-Lovebird",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_LoveBird.PrimalItemSkin_ChibiDino_LoveBird"
+   ]
+  ]
+ },
+ "easter": {
+  "c": [
+   [
+    "Bunny Dodo",
+    "/Game/PrimalEarth/Dinos/Dodo/Dodo_Character_BP_Bunny.Dodo_Character_BP_Bunny"
+   ],
+   [
+    "Bunny Oviraptor",
+    "/Game/PrimalEarth/Dinos/Oviraptor/BunnyOviraptor_Character_BP.BunnyOviraptor_Character_BP"
+   ]
+  ],
+  "i": [
+   [
+    "Bunny Egg",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Structures/Halloween/PrimalItemStructure_EasterEgg.PrimalItemStructure_EasterEgg"
+   ],
+   [
+    "Festive Dino Candy (Easter)",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Consumables/PrimalItemConsumable_EasterDinoCandy.PrimalItemConsumable_EasterDinoCandy"
+   ],
+   [
+    "Dino Bunny Ears Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Leather/PrimalItemSkin_DinoBunnyHat.PrimalItemSkin_DinoBunnyHat"
+   ],
+   [
+    "Bunny Ears Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_BunnyHat.PrimalItemSkin_BunnyHat"
+   ],
+   [
+    "Procoptodon Bunny Costume",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Saddles/PrimalItemCostume_ProcopBunny.PrimalItemCostume_ProcopBunny"
+   ],
+   [
+    "Marshmallow Hat Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_MarshmallowHat.PrimalItemSkin_MarshmallowHat"
+   ],
+   [
+    "Dino Marshmallow Hat Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_DinoMarshmallowHat.PrimalItemSkin_DinoMarshmallowHat"
+   ],
+   [
+    "Chocolate Rabbit Club Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_Club_ChocolateRabbit.PrimalItemSkin_Club_ChocolateRabbit"
+   ],
+   [
+    "Bunny Hop Dance Emote",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Consumables/BaseBPs/PrimalItemConsumable_UnlockEmote_BunnyHopDance.PrimalItemConsumable_UnlockEmote_BunnyHopDance"
+   ],
+   [
+    "Dino Easter Chick Hat Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_DinoChickHat.PrimalItemSkin_DinoChickHat"
+   ],
+   [
+    "Dino Easter Egg Hat Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_DinoEasterEggHat.PrimalItemSkin_DinoEasterEggHat"
+   ],
+   [
+    "E4 Remote Eggsplosives Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_EasterBasket_C4.PrimalItemSkin_EasterBasket_C4"
+   ],
+   [
+    "Easter Chick Hat Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_EasterChick.PrimalItemSkin_EasterChick"
+   ],
+   [
+    "Easter Egg Hat Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_EasterEggHat.PrimalItemSkin_EasterEggHat"
+   ],
+   [
+    "Easter Egghead Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_EggNestHat.PrimalItemSkin_EggNestHat"
+   ],
+   [
+    "Sweet Spear Carrot Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Weapons/PrimalItemSkin_Spear_Carrot.PrimalItemSkin_Spear_Carrot"
+   ],
+   [
+    "Chibi-Basilisk",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Basilisk.PrimalItemSkin_ChibiDino_Basilisk"
+   ],
+   [
+    "Chibi-Beelzebufo",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Beelzebufo.PrimalItemSkin_ChibiDino_Beelzebufo"
+   ],
+   [
+    "Chibi-Bunny",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Bunny.PrimalItemSkin_ChibiDino_Bunny"
+   ],
+   [
+    "Chibi-Karkinos",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Karkinos.PrimalItemSkin_ChibiDino_Karkinos"
+   ],
+   [
+    "Chibi-Megalodon",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Megalodon.PrimalItemSkin_ChibiDino_Megalodon"
+   ],
+   [
+    "Chibi-Seeker",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Seeker.PrimalItemSkin_ChibiDino_Seeker"
+   ],
+   [
+    "Bunny Tail Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_BunnyTail.PrimalItemSkin_BunnyTail"
+   ],
+   [
+    "Festive Dino Candy",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Consumables/PrimalItemConsumable_FestiveDinoCandy.PrimalItemConsumable_FestiveDinoCandy"
+   ],
+   [
+    "Tail Wiggle Emote",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Consumables/BaseBPs/PrimalItemConsumable_UnlockEmote_TailWiggle.PrimalItemConsumable_UnlockEmote_TailWiggle"
+   ],
+   [
+    "Chibi-Achatina",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Achatina.PrimalItemSkin_ChibiDino_Achatina"
+   ],
+   [
+    "Chibi-Easter Chick",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_EasterChick.PrimalItemSkin_ChibiDino_EasterChick"
+   ],
+   [
+    "Chibi-Jerbunny",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_JerboaBunny.PrimalItemSkin_ChibiDino_JerboaBunny"
+   ],
+   [
+    "Chibi-Thorny Dragon",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_SpineyLizard.PrimalItemSkin_ChibiDino_SpineyLizard"
+   ],
+   [
+    "Chibi-X-Sabertooth",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_SaberX.PrimalItemSkin_ChibiDino_SaberX"
+   ],
+   [
+    "Bunny Costume Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_Costume_Bunny.PrimalItemSkin_Costume_Bunny"
+   ],
+   [
+    "Chibi-Dilophosaur",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Dilophosaur.PrimalItemSkin_ChibiDino_Dilophosaur"
+   ],
+   [
+    "Chibi-Microraptor",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Microraptor.PrimalItemSkin_ChibiDino_Microraptor"
+   ],
+   [
+    "Chibi-Purlovia",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Purlovia.PrimalItemSkin_ChibiDino_Purlovia"
+   ],
+   [
+    "Chibi-Queen Bee",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_QueenBee.PrimalItemSkin_ChibiDino_QueenBee"
+   ],
+   [
+    "Chibi-Spring Shinehorn",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_SpringShinehorn.PrimalItemSkin_ChibiDino_SpringShinehorn"
+   ]
+  ]
+ },
+ "birthday": {
+  "c": [
+   [
+    "DodoRex",
+    "/Game/PrimalEarth/Dinos/DodoRex/DodoRex_Character_BP.DodoRex_Character_BP"
+   ],
+   [
+    "Party Dodo",
+    "/Game/PrimalEarth/Dinos/Dodo/Dodo_Character_BP_Birthday.Dodo_Character_BP_Birthday"
+   ]
+  ],
+  "i": [
+   [
+    "Birthday Cake",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Structures/Halloween/PrimalItemStructure_BirthdayCake.PrimalItemStructure_BirthdayCake"
+   ],
+   [
+    "Birthday Candle",
+    "/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_BirthdayCandle.PrimalItemResource_BirthdayCandle"
+   ],
+   [
+    "Birthday Suit Pants Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Leather/PrimalItemSkin_BirthdayPants.PrimalItemSkin_BirthdayPants"
+   ],
+   [
+    "Birthday Suit Shirt Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Leather/PrimalItemSkin_BirthdayShirt.PrimalItemSkin_BirthdayShirt"
+   ],
+   [
+    "Dino Party Hat Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Leather/PrimalItemSkin_DinoPartyHat.PrimalItemSkin_DinoPartyHat"
+   ],
+   [
+    "Party Hat Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_PartyHat.PrimalItemSkin_PartyHat"
+   ],
+   [
+    "ARK Anniversary Surprise Cake",
+    "/Game/PrimalEarth/Structures/PopOutCake/PrimalItemStructure_BirthdayCake.PrimalItemStructure_BirthdayCake"
+   ],
+   [
+    "Cake Slice",
+    "/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_CakeSlice.PrimalItemResource_CakeSlice"
+   ],
+   [
+    "Chibi Party Rex",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_PartyRex.PrimalItemSkin_ChibiDino_PartyRex"
+   ],
+   [
+    "Chibi-Dodo",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Dodo.PrimalItemSkin_ChibiDino_Dodo"
+   ],
+   [
+    "Chibi-Managarmr",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Managarmr.PrimalItemSkin_ChibiDino_Managarmr"
+   ],
+   [
+    "Chibi-Tropeognathus",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Tropeognathus.PrimalItemSkin_ChibiDino_Tropeognathus"
+   ],
+   [
+    "Chibi-Unicorn",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Unicorn.PrimalItemSkin_ChibiDino_Unicorn"
+   ]
+  ]
+ },
+ "Summer": {
+  "c": [],
+  "i": [
+   [
+    "Summer Swirl Taffy",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Consumables/PrimalItemConsumable_Crafted_FourthOfJulyDinoCandy.PrimalItemConsumable_Crafted_FourthOfJulyDinoCandy"
+   ],
+   [
+    "Torch Sparkler Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Leather/PrimalItemSkin_TorchSparkler.PrimalItemSkin_TorchSparkler"
+   ],
+   [
+    "Fireworks Flaregun Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Leather/PrimalItemSkin_FlaregunFireworks.PrimalItemSkin_FlaregunFireworks"
+   ],
+   [
+    "Fireworks Rocket Launcher Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Leather/PrimalItemSkin_RocketLauncherFireworks.PrimalItemSkin_RocketLauncherFireworks"
+   ],
+   [
+    "Uncle Sam Hat Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_TopHat_Summer.PrimalItemSkin_TopHat_Summer"
+   ],
+   [
+    "Dino Uncle Sam Hat Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_TopHat_Summer_Dino.PrimalItemSkin_TopHat_Summer_Dino"
+   ],
+   [
+    "Archer Flex Emote",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Consumables/BaseBPs/PrimalItemConsumable_UnlockEmote_Flex2.PrimalItemConsumable_UnlockEmote_Flex2"
+   ],
+   [
+    "Bicep Smooch Emote",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Consumables/BaseBPs/PrimalItemConsumable_UnlockEmote_Flex1.PrimalItemConsumable_UnlockEmote_Flex1"
+   ],
+   [
+    "Bulbdog-Print Shirt Skin",
+    "/Game/ PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_HawaiianShirt_Bulbdog.PrimalItemSkin_HawaiianShirt_Bulbdog"
+   ],
+   [
+    "Flying Disc Skin",
+    "/Game/ PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_Boomerang_Frisbee.PrimalItemSkin_Boomerang_Frisbee"
+   ],
+   [
+    "Gasbags-Print Shirt Skin",
+    "/Game/ PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_HawaiianShirt_Gasbags.PrimalItemSkin_HawaiianShirt_Gasbags"
+   ],
+   [
+    "Grilling Spatula Skin",
+    "/Game/ PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_Club_BBQSpatula.PrimalItemSkin_Club_BBQSpatula"
+   ],
+   [
+    "Ice Pop-Print Shirt Skin",
+    "/Game/ PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_HawaiianShirt_Island.PrimalItemSkin_HawaiianShirt_Island"
+   ],
+   [
+    "Sea Life-Print Shirt Skin",
+    "/Game/ PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_HawaiianShirt_SeaStuff.PrimalItemSkin_HawaiianShirt_SeaStuff"
+   ],
+   [
+    "Sunglasses Skin",
+    "/Game/ PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_SunGlasses.PrimalItemSkin_SunGlasses"
+   ],
+   [
+    "Water Soaker Skin",
+    "/Game/ PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_Flamethrower_SuperSoaker.PrimalItemSkin_Flamethrower_SuperSoaker"
+   ],
+   [
+    "Air Drums Emote",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Consumables/BaseBPs/PrimalItemConsumable_UnlockEmote_AirDrum.PrimalItemConsumable_UnlockEmote_AirDrum"
+   ],
+   [
+    "Air Guitar Emote",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Consumables/BaseBPs/PrimalItemConsumable_UnlockEmote_AirGuitar.PrimalItemConsumable_UnlockEmote_AirGuitar"
+   ],
+   [
+    "Mosh Pit Emote",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Consumables/BaseBPs/PrimalItemConsumable_UnlockEmote_MoshPit.PrimalItemConsumable_UnlockEmote_MoshPit"
+   ],
+   [
+    "Chibi-Ammonite",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Ammonite.PrimalItemSkin_ChibiDino_Ammonite"
+   ],
+   [
+    "Chibi-Astrocetus",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Astrocetus.PrimalItemSkin_ChibiDino_Astrocetus"
+   ],
+   [
+    "Chibi-Cnidaria",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Cnidaria.PrimalItemSkin_ChibiDino_Cnidaria"
+   ],
+   [
+    "Chibi-Manta",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Manta.PrimalItemSkin_ChibiDino_Manta"
+   ],
+   [
+    "Chibi-Plesiosaur",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Plesiosaur.PrimalItemSkin_ChibiDino_Plesiosaur"
+   ],
+   [
+    "Hula Dance Emote",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Consumables/BaseBPs/PrimalItemConsumable_UnlockEmote_HulaDance.PrimalItemConsumable_UnlockEmote_HulaDance"
+   ],
+   [
+    "Chibi-Astrodelphis",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Astrodelphis.PrimalItemSkin_ChibiDino_Astrodelphis"
+   ],
+   [
+    "Chibi-Deal With It Dodo",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_DodoDealWithIt.PrimalItemSkin_ChibiDino_DodoDealWithIt"
+   ],
+   [
+    "Chibi-Maewing",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_Maewing.PrimalItemSkin_ChibiDino_Maewing"
+   ],
+   [
+    "Chibi-Straw Hat Otter",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_OtterStrawHat.PrimalItemSkin_ChibiDino_OtterStrawHat"
+   ],
+   [
+    "Chibi-Voidwyrm",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_VoidWyvern.PrimalItemSkin_ChibiDino_VoidWyvern"
+   ]
+  ]
+ },
+ "ARKaeology": {
+  "c": [
+   [
+    "Tek Rex",
+    "/Game/PrimalEarth/Dinos/Rex/BionicRex_Character_BP.BionicRex_Character_BP"
+   ]
+  ],
+  "i": [
+   [
+    "Corrupted Helmet Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_CorruptedHelmet.PrimalItemSkin_CorruptedHelmet"
+   ],
+   [
+    "Dinosaur Bone",
+    "/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_ARKBone.PrimalItemResource_ARKBone"
+   ],
+   [
+    "Brachiosaurus Costume",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemCostume_Brachiosaurus.PrimalItemCostume_Brachiosaurus"
+   ],
+   [
+    "Bronto Bone Costume",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Saddles/PrimalItemCostume_BoneSauro.PrimalItemCostume_BoneSauro"
+   ],
+   [
+    "Carno Bone Costume",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Saddles/PrimalItemCostume_BoneCarno.PrimalItemCostume_BoneCarno"
+   ],
+   [
+    "Dilo Mask Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_DiloMask.PrimalItemSkin_DiloMask"
+   ],
+   [
+    "Giganotosaurus Bone Costume",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Saddles/PrimalItemCostume_BoneGigant.PrimalItemCostume_BoneGigant"
+   ],
+   [
+    "Jerboa Bone Costume",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Saddles/PrimalItemCostume_BoneJerboa.PrimalItemCostume_BoneJerboa"
+   ],
+   [
+    "Quetzalcoatlus Bone Costume",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Saddles/PrimalItemCostume_BoneQuetz.PrimalItemCostume_BoneQuetz"
+   ],
+   [
+    "Raptor Bone Costume",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Saddles/PrimalItemCostume_BoneRaptor.PrimalItemCostume_BoneRaptor"
+   ],
+   [
+    "Rex Bone Costume",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Saddles/PrimalItemCostume_BoneRex.PrimalItemCostume_BoneRex"
+   ],
+   [
+    "Stego Bone Costume",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Saddles/PrimalItemCostume_BoneStego.PrimalItemCostume_BoneStego"
+   ],
+   [
+    "Stygimoloch Costume",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemCostume_Stygimoloch.PrimalItemCostume_Stygimoloch"
+   ],
+   [
+    "Styracosaurus Costume",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemCostume_Styracosaurus.PrimalItemCostume_Styracosaurus"
+   ],
+   [
+    "Trike Bone Costume",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Saddles/PrimalItemCostume_BoneTrike.PrimalItemCostume_BoneTrike"
+   ],
+   [
+    "Trike Bone Helmet Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Leather/PrimalItemSkin_TrikeSkullHelmet.PrimalItemSkin_TrikeSkullHelmet"
+   ],
+   [
+    "Wyvern Bone Costume",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Saddles/PrimalItemCostume_BoneWyvern.PrimalItemCostume_BoneWyvern"
+   ]
+  ]
+ },
+ "NewYear": {
+  "c": [],
+  "i": [
+   [
+    "Top Hat Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_TopHat.PrimalItemSkin_TopHat"
+   ]
+  ]
+ },
+ "ExtinctionChronicles": {
+  "c": [],
+  "i": [
+   [
+    "Tek Rex Egg",
+    "/Game/PrimalEarth/Test/PrimalItemConsumable_Egg_Rex_Bionic.PrimalItemConsumable_Egg_Rex_Bionic"
+   ],
+   [
+    "Tek Stego Egg",
+    "/Game/PrimalEarth/Test/PrimalItemConsumable_Egg_Stego_Bionic.PrimalItemConsumable_Egg_Stego_Bionic"
+   ],
+   [
+    "Tek Raptor Egg",
+    "/Game/PrimalEarth/Test/PrimalItemConsumable_Egg_Raptor_Bionic.PrimalItemConsumable_Egg_Raptor_Bionic"
+   ],
+   [
+    "Tek Parasaur Egg",
+    "/Game/PrimalEarth/Test/PrimalItemConsumable_Egg_Para_Bionic.PrimalItemConsumable_Egg_Para_Bionic"
+   ],
+   [
+    "Tek Quetzal Egg",
+    "/Game/PrimalEarth/Test/PrimalItemConsumable_Egg_Quetz_Bionic.PrimalItemConsumable_Egg_Quetz_Bionic"
+   ],
+   [
+    "Corrupted Helmet Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_CorruptedHelmet.PrimalItemSkin_CorruptedHelmet"
+   ],
+   [
+    "Corrupted Boots Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_CorruptedBoots.PrimalItemSkin_CorruptedBoots"
+   ],
+   [
+    "Corrupted Pants Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_CorruptedPants.PrimalItemSkin_CorruptedPants"
+   ],
+   [
+    "Corrupted Shirt Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_CorruptedShirt.PrimalItemSkin_CorruptedShirt"
+   ],
+   [
+    "Corrupted Gloves Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_CorruptedGloves.PrimalItemSkin_CorruptedGloves"
+   ],
+   [
+    "Element",
+    "/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Element.PrimalItemResource_Element"
+   ]
+  ]
+ },
+ "GenesisChronicles": {
+  "c": [],
+  "i": [
+   [
+    "Mini-HLNA Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_MiniHLNA.PrimalItemSkin_MiniHLNA"
+   ],
+   [
+    "Corrupted Avatar Helmet Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_Gen1AvatarHelmet.PrimalItemSkin_Gen1AvatarHelmet"
+   ],
+   [
+    "Corrupted Avatar Boots Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_Gen1AvatartBoots.PrimalItemSkin_Gen1AvatartBoots"
+   ],
+   [
+    "Corrupted Avatar Pants Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_Gen1AvatarPants.PrimalItemSkin_Gen1AvatarPants"
+   ],
+   [
+    "Corrupted Avatar Gloves Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_Gen1AvatarGloves.PrimalItemSkin_Gen1AvatarGloves"
+   ],
+   [
+    "Corrupted Avatar Shirt Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_Gen1AvatarShirt.PrimalItemSkin_Gen1AvatarShirt"
+   ],
+   [
+    "Element",
+    "/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Element.PrimalItemResource_Element"
+   ]
+  ]
+ },
+ "Genesis2Chronicles": {
+  "c": [],
+  "i": [
+   [
+    "Mini-HLNA Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_MiniHLNA.PrimalItemSkin_MiniHLNA"
+   ],
+   [
+    "Federation Exo Boots Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_TekBoots_V2.PrimalItemSkin_TekBoots_V2"
+   ],
+   [
+    "Federation Exo Pants Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_TekPants_V2.PrimalItemSkin_TekPants_V2"
+   ],
+   [
+    "Federation Exo Shirt Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_TekShirt_V2.PrimalItemSkin_TekShirt_V2"
+   ],
+   [
+    "Federation Exo Gloves Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_TekGloves_V2.PrimalItemSkin_TekGloves_V2"
+   ],
+   [
+    "Federation Exo Helmet Skin",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_TekHelmet_V2.PrimalItemSkin_TekHelmet_V2"
+   ],
+   [
+    "Chibi-Shadowmane",
+    "/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/ChibiDinos/PrimalItemSkin_ChibiDino_ShadowMane.PrimalItemSkin_ChibiDino_ShadowMane"
+   ]
+  ]
+ }
+}

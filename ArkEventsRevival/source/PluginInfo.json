@@ -1,0 +1,6 @@
+{
+  "FullName": "ArkEventsRevival",
+  "Description": "Revives ARK's seasonal events on a private server: forces the native official-server gate so event cosmetics/recipes unlock, runs scheduled boss encounters, remaps wild dino spawns to event skins, and spawns per-event drop items. Wild dino remap is experimental - verify live with DebugMode.",
+  "Version": 1.0,
+  "MinApiVersion": 3.56
+}
