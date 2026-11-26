@@ -22,7 +22,7 @@ Anniversary and New Year's - with event creatures, bosses, drops and Discord ann
 4. Start the server, or run `plugins.load ArkEventsRevival` in the console.
 
 ## Configuring
-[`config-commented.jsonc`](ArkEventsRevival/config-commented.jsonc) explains every setting (it is documentation only; the plugin reads the
+[`config-commented.jsonc`](release/config-commented.jsonc) explains every setting (it is documentation only; the plugin reads the
 `config_<Map>.json` files). Creatures, bosses, levels, crate loot and spawn regions are all editable per map and
 per event, and a mod map can be added by copying an existing file and renaming it to the map's name.
 
